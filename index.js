@@ -3474,7 +3474,7 @@ case 'narutologo':
 					buffer = await getBuffer(`https://i.imgur.com/8U9GwX4.jpg`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Cara bate pra 2d 😂'})
 					break
-				case 'belle
+				case 'belle':
 					memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://i.imgur.com/ZEWlLuc.png`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Em-breve meu amigo'})
