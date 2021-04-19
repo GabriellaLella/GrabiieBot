@@ -41,7 +41,7 @@ termux-setup-storage
 
 pkg install git && pkg install wget && pkg install ffmpeg && pkg install nodejs-lts
 
-git clone https://github.com/Grabiie0011/Grabiie
+git clone https://github.com/Grabiie/GrabiieBot
 
 cd Grabiie
 
