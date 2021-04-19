@@ -662,6 +662,39 @@ if (text.includes("placa"))
 		}, 0)
 	}
 	
+		        if (messagesC.includes("http://")){
+		if (!isGroup) return
+		if (!isAntiLink) return
+		if (isGroupAdmins) return reply('Você é admin, então n irei te dar ban por usar links🙂')
+		client.updatePresence(from, Presence.composing)
+		if (messagesC.includes("#izinadmin")) return reply("#izinadmin diterima")
+		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
+		reply(`Link detectado ${sender.split("@")[0]} você sera expulso deste grupo em 5 segundos`)
+		setTimeout( () => {
+			client.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
+		}, 5000)
+		setTimeout( () => {
+			client.updatePresence(from, Presence.composing)
+			reply("1 segundo")
+		}, 4000)
+		setTimeout( () => {
+			client.updatePresence(from, Presence.composing)
+			reply("2 segundos")
+		}, 3000)
+		setTimeout( () => {
+			client.updatePresence(from, Presence.composing)
+			reply("3 segundos")
+		}, 2000)
+		setTimeout( () => {
+			client.updatePresence(from, Presence.composing)
+			reply("4 segundos")
+		}, 1000)
+		setTimeout( () => {
+			client.updatePresence(from, Presence.composing)
+			reply("5 segundos tchau 🤙")
+		}, 0)
+	}
+	
 	if (messagesC.includes("fdp")){
 			client.updatePresence(from, Presence.composing)
 			reply("Teu pai")
@@ -702,49 +735,21 @@ if (text.includes("placa"))
 			reply("opa")
 	}
 
-		if (messagesC.includes("Rai")){
+			if (messagesC.includes("rojao")){
 			client.updatePresence(from, Presence.composing)
-			reply("Oe, meu dono provavelmente esta ocupado, então aguarde PORRA")
-	}
-	
-		if (messagesC.includes("*meliodas")){
-			client.updatePresence(from, Presence.composing)
-			reply("Saca só")
-	}
-
-			if (messagesC.includes("bah")){
-			client.updatePresence(from, Presence.composing)
-			tujuh = fs.readFileSync('./assets/bahc.mp3');
+			tujuh = fs.readFileSync('./assets/rojao.mp3');
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
 	
-			if (messagesC.includes("mermao")){
+			if (messagesC.includes("rojão")){
 			client.updatePresence(from, Presence.composing)
-			tujuh = fs.readFileSync('./assets/irmao.mp3');
-            client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-	}
-		
-			if (messagesC.includes("tmnc")){
-			client.updatePresence(from, Presence.composing)
-			tujuh = fs.readFileSync('./assets/belmiro.mp3');
-            client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-	}
-	
-			if (messagesC.includes("Hehehe")){
-			client.updatePresence(from, Presence.composing)
-			tujuh = fs.readFileSync('./assets/hehe.mp3');
+			tujuh = fs.readFileSync('./assets/rojao.mp3');
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
 
 			if (messagesC.includes("bot")){
 			client.updatePresence(from, Presence.composing)
-			tujuh = fs.readFileSync('./assets/oibot.m4a');
-            client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-	}
-	
-			if (messagesC.includes("Dbz")){
-			client.updatePresence(from, Presence.composing)
-			tujuh = fs.readFileSync('./assets/Dbz.mp3');
+			tujuh = fs.readFileSync('./assets/xandao.m4a');
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
             if (messagesC.includes("grabiie")){
@@ -777,7 +782,7 @@ if (text.includes("placa"))
 
 		if (messagesC.includes("Te amo")){
 			client.updatePresence(from, Presence.composing)
-			reply("Eu tbm")
+			reply("Eu tbm te amo")
 	}
 	
 		if (messagesC.includes("Alguem ai pra jogar?")){
