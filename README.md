@@ -14,7 +14,7 @@
     </p>
 </h1>
 
-# 🤓 Índice
+# 🤠 Índice
 - [Sobre](#Sobre)
 - [Ferramentas](#Ferramentas-necessárias)
 - [Instalação](#Instalação-via-termux)
