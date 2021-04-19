@@ -7,7 +7,6 @@ const {
 } = require('@adiwajshing/baileys')
 const { color, bgcolor } = require('./lib/color')
 const { help } = require('./src/help')
-const {help1} = require('./src/help1')
 const { modapk } = require('./src/modapk')
 const { pack } = require('./src/pack')
 const { outros } = require('./src/outros')
@@ -811,10 +810,6 @@ if (text.includes("placa"))
                     putagg = await getBuffer(`https://i.imgur.com/4UdD7Vr.jpg`)
                     client.sendMessage(from, putagg, image, {quoted: mek, caption: help(prefix)})
                     break
-				case 'help1':
-				case 'menu1':
-					client.sendMessage(from, help1(prefix), text)
-					break
 				case 'alist':
 					client.sendMessage(from, alist(prefix), text)
 					break
@@ -4069,7 +4064,7 @@ case 'narutologo':
 						console.log(muehe)
 						reply(muehe)
 					} else {
-						console.log(color('[ERROR]','red'), 'eita pexti vey comando n registrado', color(sender.split('@')[0]))
+						console.log(color('[ERRO]','red'), 'comando não registrado de:', color(sender.split('@')[0]))
 					}
                            }
 		} catch (e) {
