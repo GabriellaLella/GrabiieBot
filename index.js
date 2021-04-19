@@ -3523,7 +3523,7 @@ case 'narutologo':
 							.toFormat('webp')
 							.save(ran)*/
 					} else {
-						reply(`Envie fotos com legendas **sticker* ou marque uma imagem que já foi enviada`)
+						reply(`Envie fotos com legenda *.f* ou marque uma imagem que já foi enviada`)
 					}
 					break
 				case 'tts':
