@@ -1927,13 +1927,19 @@ break
 					client.sendMessage(from, 'Questão : *'+hobby+'*\n\nResponda : '+ by, text, { quoted: mek })
 					await limitAdd(sender)
 					break
-           case 'gay1':
-
-					gay = body.slice(13)
-		   anu = await fetchJson(`https://arugaz.herokuapp.com/api/howgay`, {method: 'get'})
-		   hasil = `Veja os dados do Gay ${gay}\n\n\nPercentagem Gay : ${anu.persen}%\nAlerta!!! : gay, mas não cego`
-		   reply(hasil)
-		   await limitAdd(sender)
+				case 'gay':
+					if (!isGroup) return reply(mess.only.group)
+						membr = []
+						const suamae11 = groupMembers
+						const suamae21 = groupMembers
+						const teupai11 = suamae11[Math.floor(Math.random() * suamae11.length)]
+						const teupai21 = suamae21[Math.floor(Math.random() * suamae21.length)]
+						var shipted1 = ["1%", `2%`, `3%`, `4%`, `5%`, `6%`, `7%`, `8%`, `9%`, `10%`, `11%`, `12%`, `13%`, `14%`, `15%`, `16%`, `17%`, `18%`, `19%`, `20%`, `21%`, `22%`, `23%`, `24%`, `25%`, `26%`, `27%`, `28%`, `29%`, `30%`, `31%`, `32%`, `33%`, `34%`, `35%`, `36%`, `37%`, `38%`, `39%`, `40%`, `41%`, `42%`, `43%`, `44%`, `45%`, `46%`, `47%`, `48%`, `49%`, `50%`, `51%`, `52%`, `53%`, `54%`, `55%`, `56%`, `57%`, `58%`, `59%`, `60%`, `61%`, `62%`, `63%`, `64%`, `65%`, `66%`, `67%`, `68%`, `69%`, `70%`, `71%`, `72%`, `73%`, `74%`, `75%`, `76%`, `77%`, `78%`, `79%`, `80%`, `81%`, `82%`, `83%`, `84%`, `85%`, `86%`, `87%`, `88%`, `89%`, `90%`, `91%`, `92%`, `93%`, `94%`, `95%`, `96%`, `97%`, `98%`, `99%`, `100%`]
+						const shipted = shipted1[Math.floor(Math.random() * shipted1.length)]
+						teks = `A porcentagem gay de\n\n@${teupai11.jid.split('@')[0]}\n\né: ${shipted}`
+						membr.push(teupai11.jid)
+						membr.push(teupai21.jid)
+						mentions(teks, membr, true)
 					break
                 case 'nangis':
 
@@ -3488,7 +3494,7 @@ case 'narutologo':
 						const teupai21 = suamae21[Math.floor(Math.random() * suamae21.length)]
 						var shipted1 = ["1%", `2%`, `3%`, `4%`, `5%`, `6%`, `7%`, `8%`, `9%`, `10%`, `11%`, `12%`, `13%`, `14%`, `15%`, `16%`, `17%`, `18%`, `19%`, `20%`, `21%`, `22%`, `23%`, `24%`, `25%`, `26%`, `27%`, `28%`, `29%`, `30%`, `31%`, `32%`, `33%`, `34%`, `35%`, `36%`, `37%`, `38%`, `39%`, `40%`, `41%`, `42%`, `43%`, `44%`, `45%`, `46%`, `47%`, `48%`, `49%`, `50%`, `51%`, `52%`, `53%`, `54%`, `55%`, `56%`, `57%`, `58%`, `59%`, `60%`, `61%`, `62%`, `63%`, `64%`, `65%`, `66%`, `67%`, `68%`, `69%`, `70%`, `71%`, `72%`, `73%`, `74%`, `75%`, `76%`, `77%`, `78%`, `79%`, `80%`, `81%`, `82%`, `83%`, `84%`, `85%`, `86%`, `87%`, `88%`, `89%`, `90%`, `91%`, `92%`, `93%`, `94%`, `95%`, `96%`, `97%`, `98%`, `99%`, `100%`]
 						const shipted = shipted1[Math.floor(Math.random() * shipted1.length)]
-						teks = `Hmmm.... Eu Shipo 💘\n\n1= @${teupai11.jid.split('@')[0]}\ne esse\n2= @${teupai21.jid.split('@')[0]}\ncom uma porcentagem de: ${shipted}`
+						teks = `Hmmm.... Eu Shipo 💘\n\n@${teupai11.jid.split('@')[0]}\n@${teupai21.jid.split('@')[0]}\ncom uma porcentagem de: ${shipted}`
 						membr.push(teupai11.jid)
 						membr.push(teupai21.jid)
 						mentions(teks, membr, true)
