@@ -1,12 +1,12 @@
-const help = (pushname, prefix) => {
+const help = (prefix) => {
 
 	return `
 <══════════════════════>
       *Grabiie BOT*
  <══════════════════════>
 
-  ● 𝗕𝗢𝗧●𝗠𝗘𝗡𝗨●         
-Seja bem-vindo ${pushname2}       
+  ● 𝗕𝗢𝗧●𝗠𝗘𝗡𝗨●
+Seja bem-vindo
   BӨƬ VΣЯƧΛ̃Ө 5.0
 
 ┌────────────────────
@@ -178,6 +178,8 @@ Mandar a msg sem o prefixo
   ├─ 📌 bot
   ├─ 📌 yamete ou kudasai
   └─ 📌 rojão ou rojao
+`
 }
+
 exports.help = help
 
