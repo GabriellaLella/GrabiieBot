@@ -15,6 +15,7 @@
 </h1>
 
 # 🤓 Índice
+- [Sobre](#Sobre)
 - [Ferramentas](#Ferramentas-necessárias)
 - [Instalação](#Instalação-via-termux)
 - [Inicialização](#Primeira-inicialização)
@@ -23,6 +24,9 @@
 - [Donate](#Ajude-o-projeto)
 - [Contatos](#Contato)
 
+#Sobre
+Um bot de WhatsApp que recebe atualizações de vez em quando.
+Base: https://github.com/Meliodas-rai/Bot
 # Ferramentas necessárias
 
 ```
