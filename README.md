@@ -22,7 +22,7 @@
 - [Inicializações seguintes](#Inicializações-seguintes)
 - [Windows e Linux](#Windows-e-Linux)
 - [Donate](#Ajude-o-projeto)
-- [Contatos](#Contato)
+- [Contatos](#Contatos)
 
 # Sobre
 
@@ -75,6 +75,6 @@ Pix: gabriel.5.gjdsr@gmail.com
 
 Paypal: juciane.5.gjdsr@gmail.com
 
-# Contato
+# Contatos
 
 https://linktr.ee/Grabiie
