@@ -1,7 +1,7 @@
 # Grabiie BOT
 <h1 align="center">
     <p>
-        <img src= "https://i.imgur.com/2dSZh87.gif">
+        <img src= "https://i.imgur.com/wRD6OCR.gif">
     </p>
     <p>
         <a href="https://github.com/grabiie"><img title="Autor"    src="https://img.shields.io/badge/Autor-Grabiie-blue.svg?style=for-the-badge&logo=github"></a>
