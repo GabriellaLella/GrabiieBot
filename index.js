@@ -53,19 +53,19 @@ const { limit } = require('./database/menu/limit*/
 const apivhtear = 'apivhtear';
 const apibarbar = 'apibarbar';
 const tobzkey = 'apitobz';
-const BotName = 'XandãoBot'; 
+const BotName = 'GrabiieBot'; 
 const instagram = 'http://www.instagram.com/'; 
 const aktif = '08:00 - 22:00';
 const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n' 
-            + 'FN:Meliodas\n' // Nama kamu
+            + 'FN:Grabiie\n' // Nama kamu
             + 'ORG:Lexa;\n' // Nama bot
-            + 'TEL;type=CELL;type=VOICE;waid=5589981210976:+55 89 981210976\n' //Nomor whatsapp kamu
+            + 'TEL;type=CELL;type=VOICE;waid=5535999191111:+55 35 999191111\n' //Nomor whatsapp kamu
             + 'END:VCARD'
 prefix = '*','#','+',
 blocked = []
 limitawal = '999999999'
-cr = '*Meliodas*'
+cr = '*Grabiie*'
 
 /*********** LOAD FILE ***********/
 const _leveling = JSON.parse(fs.readFileSync('./database/group/leveling.json'))
@@ -200,15 +200,15 @@ async function starts() {
 	client.logger.level = 'warn'
 	console.log(banner.string)
 	client.on('qr', () => {
-		console.log(color('[','white'), color('!','red'), color(']','white'), color(' Scan the qr code above'))
+		console.log(color('[','white'), color('!','red'), color(']','white'), color('Digitalize o código qr acima'))
 	})
 
 	fs.existsSync('./BarBar.json') && client.loadAuthInfo('./BarBar.json')
 	client.on('connecting', () => {
-		start('2', 'Pera ae vey...')
+		start('2', 'Conectando...')
 	})
 	client.on('open', () => {
-		success('2', 'Conectado parça')
+		success('2', 'Conectado')
 	})
 	await client.connect({timeoutMs: 30*1000})
         fs.writeFileSync('./BarBar.json', JSON.stringify(client.base64EncodedAuthInfo(), null, '\t'))
@@ -225,7 +225,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `𝚘𝚕𝚊 𝚖𝚎𝚞 𝚌𝚊𝚛𝚘 𝚐𝚊𝚏𝚊𝚗𝚑𝚘𝚝𝚘@${num.split('@')[0]}\n𝚂𝚎𝚓𝚊 𝚋𝚎𝚖 𝚟𝚒𝚗𝚍𝚘 𝚊𝚘  *${mdata.subject}*\n\n 𝚕𝚎𝚒𝚊 𝚊𝚜 𝚛𝚎𝚐𝚛𝚊𝚜 𝚜𝚎 𝚗ã𝚘 𝚓𝚊 𝚕𝚎𝚟𝚊 𝚘 𝚋𝚊𝚗️`
+				teks = `Ola membro novo@${num.split('@')[0]}\n𝚂𝚎𝚓𝚊 𝚋𝚎𝚖 𝚟𝚒𝚗𝚍𝚘 𝚊𝚘  *${mdata.subject}*\n\n 𝚕𝚎𝚒𝚊 𝚊𝚜 𝚛𝚎𝚐𝚛𝚊𝚜 𝚜𝚎 𝚗ã𝚘 𝚓𝚊 𝚕𝚎𝚟𝚊 𝚘 𝚋𝚊𝚗️`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 				client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
@@ -236,7 +236,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `𝙱𝚘𝚒 𝚋𝚘𝚒 𝚋𝚘𝚒... 𝚋𝚘𝚒 𝚍𝚊 𝚌𝚊𝚛𝚊 𝚙𝚛𝚎𝚝𝚊 𝚜𝚎 𝚝𝚞 𝚏𝚘𝚒 𝚎𝚖𝚋𝚘𝚛𝚊 𝚌𝚎 𝚟𝚊𝚒 𝚜𝚎𝚗𝚝𝚊𝚛 𝚎 𝚗𝚊 𝚌𝚊𝚋𝚎ç𝚊@${num.split('@')[0]} 𝚔𝚔𝚔𝚔𝚔𝚔𝚔 😂👋`
+				teks = `Foi embora@${num.split('@')[0]} 𝚔𝚔𝚔𝚔𝚔𝚔𝚔 👋`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			}
@@ -267,7 +267,7 @@ async function starts() {
 			const type = Object.keys(mek.message)[0]
 			const apiKey = 'Your-Api-Key'
 			const { text, extendedText, contact, location, liveLocation, image, video, sticker, document, audio, product } = MessageType
-			const time = moment.tz('Asia/Jakarta').format('DD/MM HH:mm:ss')
+			const time = moment.tz('America/Sao_Paulo').format('DD/MM HH:mm:ss')
 			body = (type === 'conversation' && mek.message.conversation.startsWith(prefix)) ? mek.message.conversation : (type == 'imageMessage') && mek.message.imageMessage.caption.startsWith(prefix) ? mek.message.imageMessage.caption : (type == 'videoMessage') && mek.message.videoMessage.caption.startsWith(prefix) ? mek.message.videoMessage.caption : (type == 'extendedTextMessage') && mek.message.extendedTextMessage.text.startsWith(prefix) ? mek.message.extendedTextMessage.text : ''
 			budy = (type === 'conversation') ? mek.message.conversation : (type === 'extendedTextMessage') ? mek.message.extendedTextMessage.text : ''
             var pes = (type === 'conversation' && mek.message.conversation) ? mek.message.conversation : (type == 'imageMessage') && mek.message.imageMessage.caption ? mek.message.imageMessage.caption : (type == 'videoMessage') && mek.message.videoMessage.caption ? mek.message.videoMessage.caption : (type == 'extendedTextMessage') && mek.message.extendedTextMessage.text ? mek.message.extendedTextMessage.text : ''
@@ -280,35 +280,35 @@ async function starts() {
 			pushname2 = client.contacts[nameReq] != undefined ? client.contacts[nameReq].vname || client.contacts[nameReq].notify : undefined
 
 			mess = {
-					wait: 'Pera ae parsa, Xandão ta Trabalhando porra',
-					success: '️❬ ✔ ❭ Pronto vey 🖤',
+					wait: '⌛ Processando ⌛',
+					success: '️✔️ Sucesso ✔️',
 					levelon: '❬ ✔ ❭ *leveling* *ativado*',
 					leveloff: ' ❬ X ❭  *leveling* *desativado*',
 					levelnoton: '❬ X ❭ *leveling não ativado*',
 					levelnol: '*error* 0 °-°',
 					error: {
-				stick: '*Bem, falhe, tente novamente ^_^*',
-				Iv: '𝗠𝗮𝗮𝗳 𝗹𝗶𝗻𝗸 𝘁𝗶𝗱𝗮𝗸 𝘃𝗮𝗹𝗶𝗱☹️'
+				stick: '[❗] Falha, ocorreu um erro ao converter a imagem em um adesivo ❌',
+				Iv: '❌ Link inválido ❌'
 				},
 				only: {
 					group: '[❗] Este comando só pode ser usado em grupos! ❌',
-					premium: '[❗] ESTE PEDIDO É SO PARA *USUÁRIOS PREMIUMS*',
-					mod: '[❗] ESTE PEDIDO É ESPECÍFICO PARA USUARIO MOD XANDÃO BOT*',
-					benned: 'Você para a banda, por favor, contate o proprietário para abrir sua banda',
-					ownerG: '[❗] Meliodas? Este é um recurso especial para o Meliodas ❌',
-					ownerB: '[❗] Meliodas? Este é um recurso especial para o Meliodas ❌',
-					userB: `──「 LISTA 」──\nOlá Kak !\nDesculpe, irmão. Você não está registrado como amigo do Meliodas. Registre-se para fazer amizade com o bot ✞︎𝙼𝚎𝚕𝚒𝚘𝚍𝚊𝚜✞︎ por meio, \n\nCommand : ${prefix}daftar nome|idade\nExemplo : ${prefix}daftar ✞︎𝙼𝚎𝚕𝚒𝚘𝚍𝚊𝚜✞︎|17\n\n──「 BOT MAN 」──`,
-					admin: '[❗] Este comando só pode ser usado por administradores de grupo! ❌',
+					premium: '[❗] Este comando é so para *USUÁRIOS PREMIUMS*',
+					mod: '[❗] Este comando é específico para mods do bot',
+					benned: 'Banido 😳',
+					ownerG: '[❗] Este é um recurso especial para o Dono ❌',
+					ownerB: '[❗] Este é um recurso especial para o Dono ❌',
+					userB: `──「 Registro 」──\nOlá seja bem-vindo!\nVocê não está registrado como amigo do Grabiie. Registre-se para fazer amizade com o bot Grabiie por meio, \n\nComando: ${prefix}daftar Nome|Idade\nExemplo: ${prefix}daftar Grabiie|21\n\n──「 GrabiieBot 」──`,
+					admin: '[❗] Este comando só pode ser usado por administradores do grupo! ❌',
 					Badmin: ' [❗] Este comando só pode ser usado quando o bot se torna administrador! ❌',
 				}
 			}
 
 			const botNumber = client.user.jid
-			const ownerNumber = ["558981210976@s.whatsapp.net","558981246187@s.whatsapp.net"] // replace this with your number
-			const mod = [ownerNumber,"558981210976@s.whatsapp.net","558981246187@s.whatsapp.net"]//ubah nomor lo
-			const adminbotnumber = ["558981210976@s.whatsapp.net","558981246187@s.whatsapp.net"]//ubah nomor lo
-			const frendsowner = ["558981210976@s.whatsapp.net","558981246187@s.whatsapp.net"]//ubah nomor lo
-			const premium = ["558981210976@s.whatsapp.net","558981246187@s.whatsapp.net","558981204807@s.whatsapp.net","558981213553@s.whatsapp.net","554999498331@s.whatsapp.net"]
+			const ownerNumber = ["553599191111@s.whatsapp.net"] // replace this with your number
+			const mod = [ownerNumber,"553599191111@s.whatsapp.net"]//ubah nomor lo
+			const adminbotnumber = ["553599191111@s.whatsapp.net"]//ubah nomor lo
+			const frendsowner = ["553599191111@s.whatsapp.net"]//ubah nomor lo
+			const premium = ["553599191111@s.whatsapp.net"]
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			const groupMetadata = isGroup ? await client.groupMetadata(from) : ''
@@ -368,7 +368,7 @@ async function starts() {
 if (text.includes("ip"))
   { const aris = text.replace(/!ip /, "") 
   axios.get(`https://mnazria.herokuapp.com/api/check?ip=${aris}`).then((res) =>{ 
-  let hasil = ` *🔍CONSULTA REALIZADA🔍* \n\n ➸ *CIDADE:*  ${res.data.city}\n ➸ *Latitude* : ${res.data.latitude}\n ➸ *Longtitude* : ${res.data.longitude}\n ➸ *REGIÃO* : ${res.data.region_name}\n ➸ *UF* : ${res.data.region_code}\n ➸ *IP* : ${res.data.ip}\n ➸ *TIPO* : ${res.data.type}\n ➸ *CEP* : ${res.data.zip}\n ➸ *LOCALIDADE* : ${res.data.location.geoname_id}\n ➸ *CAPITAL* : ${res.data.location.capital}\n ➸ *DDD* : ${res.data.location.calling_code}\n ➸ *PAÍS* : ${res.data.location.country_flag_emoji}\n *📌BY:May Bot*` 
+  let hasil = ` *🔍CONSULTA REALIZADA🔍* \n\n ➸ *CIDADE:*  ${res.data.city}\n ➸ *Latitude:* ${res.data.latitude}\n ➸ *Longtitude:* ${res.data.longitude}\n ➸ *REGIÃO:* ${res.data.region_name}\n ➸ *UF:* ${res.data.region_code}\n ➸ *IP:* ${res.data.ip}\n ➸ *TIPO:* ${res.data.type}\n ➸ *CEP:* ${res.data.zip}\n ➸ *LOCALIDADE:* ${res.data.location.geoname_id}\n ➸ *CAPITAL:* ${res.data.location.capital}\n ➸ *DDD:* ${res.data.location.calling_code}\n ➸ *PAÍS:* ${res.data.location.country_flag_emoji}\n *📌BY:May Bot*` 
   conn.sendMessage(id, hasil, MessageType.text); 
  })
  }
@@ -388,7 +388,7 @@ if (text.includes('cry')){
 if (text.includes("cnpj")){
 const aris = text.replace(/!cnpj /, "")
 axios.get(`https://www.receitaws.com.br/v1/cnpj/${aris}`).then((res) => {
-	conn.sendMessage(id, '𝙿𝙴𝚁𝙰 𝙰𝙴 𝚂𝙰𝙻𝙰𝙵𝚁𝙰𝙸𝙾', MessageType.text)
+	conn.sendMessage(id, 'Espere...', MessageType.text)
          let cep = `*🔍CONSULTA REALIZADA🔍* \n\n ➸ *ATIVIDADE PRINCIPAL:* ${res.data.atividade_principal[0].text} \n\n ➸ *DATA SITUAÇÃO:* ${res.data.data_situacao}\n\n ➸ *TIPO:* ${res.data.tipo} \n\n ➸ *NOME:* ${res.data.nome} \n\n ➸ *UF:* ${res.data.uf} \n\n ➸ *TELEFONE:* ${res.data.telefone}\n\n ➸ *SITUAÇÃO:* ${res.data.situacao} \n\n ➸ *BAIRRO:* ${res.data.bairro} \n\n ➸ *RUA:* ${res.data.logradouro} \n\n ➸ *NÚMERO :* ${res.data.numero} \n\n ➸ *CEP :* ${res.data.cep} \n\n ➸ *MUNICÍPIO:* ${res.data.municipio} \n\n ➸ *PORTE:* ${res.data.porte}\n\n ➸ *ABERTURA:* ${res.data.abertura}\n\n ➸ *NATUREZA JURÍDICA:* ${res.data.natureza_juridica} \n\n ➸ *FANTASIA:* ${res.data.fantasia}\n\n ➸ *CNPJ:* ${res.data.cnpj}\n\n ➸ *ÚLTIMA ATUALIZAÇÃO:* ${res.data.ultima_atualizacao}\n\n ➸ *STATUS:* ${res.data.status}\n\n ➸ *COMPLEMENTO:* ${res.data.complemento}\n\n ➸ *EMAIL:* ${res.data.email}\n\n *📌BY:May Bot* `;
     conn.sendMessage(id, cep ,MessageType.text);
 }) 
@@ -396,9 +396,10 @@ axios.get(`https://www.receitaws.com.br/v1/cnpj/${aris}`).then((res) => {
 
 if (text.includes("cpf")){
 const aris = text.replace(/!cpf /, "")
-axios.get(`http://geradorapp.com/api/v1/cpf/generate?token=${aris}`).then((res) => {
-	conn.sendMessage(id, '𝙿𝙴𝚁𝙰 𝙰𝙴 𝚂𝙰𝙻𝙰𝙵𝚁𝙰𝙸𝙾', MessageType.text)
-         let ecpf = `*🔍CONSULTA REALIZADA🔍* \n\n ➸ *CPF:* ${res.data.CPF} \n\n ➸ *NOME:* ${res.data.Nome}\n\n ➸ *MÃE:* ${res.data.NomeMae} \n\n ➸ *NASCIMENTO:* ${res.data.DataNascimento} \n\n ➸ *RUA:* ${res.data.Rua} \n\n ➸ *N°:* ${res.data.NumeroRua}\n\n ➸ *COMPLEMENTO:* ${res.data.Complemento}\n\n ➸ *BAIRRO:* ${res.data.Bairro}\n\n ➸ *CEP:* ${res.data.CEP}\n\n ➸ *UF:* ${res.data.EstadoSigla}\n\n ➸ *CIDADE:* ${res.data.Cidade}\n\n ➸ *ESTADO:* ${res.data.Estado}\n\n ➸ *PAIS:* ${res.data.Pais}  \n\n *📌BY:May Bot* `;
+axios.get(`https://pastebin.com/raw/9nFPeGu9`).then((res) => {
+	conn.sendMessage(id, 'Espere...', MessageType.text)
+         let ecpf = `*${res.data.data.number}*`;
+//       let ecpf = `*🔍CONSULTA REALIZADA🔍* \n\n ➸ *CPF:* ${res.data.CPF} \n\n ➸ *NOME:* ${res.data.Nome}\n\n ➸ *MÃE:* ${res.data.NomeMae} \n\n ➸ *NASCIMENTO:* ${res.data.DataNascimento} \n\n ➸ *RUA:* ${res.data.Rua} \n\n ➸ *N°:* ${res.data.NumeroRua}\n\n ➸ *COMPLEMENTO:* ${res.data.Complemento}\n\n ➸ *BAIRRO:* ${res.data.Bairro}\n\n ➸ *CEP:* ${res.data.CEP}\n\n ➸ *UF:* ${res.data.EstadoSigla}\n\n ➸ *CIDADE:* ${res.data.Cidade}\n\n ➸ *ESTADO:* ${res.data.Estado}\n\n ➸ *PAIS:* ${res.data.Pais}  \n\n *📌BY:May Bot* `;//
     conn.sendMessage(id, ecpf ,MessageType.text);
 }) 
 }
@@ -406,7 +407,7 @@ axios.get(`http://geradorapp.com/api/v1/cpf/generate?token=${aris}`).then((res) 
 if (text.includes("geradorcpf")){
 const aris = text.replace(/!geradorcpf/, "")
 axios.get(`http://geradorapp.com/api/v1/cpf/generate?token=40849779ec68f8351995def08ff1e2fa`).then((res) => {
-	conn.sendMessage(id, '𝚃𝙾 𝙿𝚁𝙾𝙲𝙴𝚂𝚂𝙰𝙽𝙳𝙾 𝚅𝙴𝚈', MessageType.text)
+	conn.sendMessage(id, 'Espere...', MessageType.text)
          let cpf = `*🔍CPF GERADOS🔍* \n\n ➸ *CPF:* ${res.data.data.number}  \n\n *📌BY:May Bot*`;
     conn.sendMessage(id, cpf ,MessageType.text);
 })
@@ -415,7 +416,7 @@ axios.get(`http://geradorapp.com/api/v1/cpf/generate?token=40849779ec68f8351995d
 if (text.includes("cep")){
 const aris = text.replace(/!cep /, "")
 axios.get(`https://viacep.com.br/ws/${aris}/json/`).then((res) => {
-	conn.sendMessage(id, '𝙿𝙴𝚁𝙰 𝙰𝙴 𝚂𝙰𝙻𝙰𝙵𝚁𝙰𝙸𝙾', MessageType.text)
+	conn.sendMessage(id, 'Espere...', MessageType.text)
          let cep = `*🔍CONSULTA REALIZADA🔍* \n\n ➸ *CEP:* ${res.data.cep} \n\n ➸ *ENDEREÇO:* ${res.data.logradouro}\n\n ➸ *COMPLEMENTO:* ${res.data.complemento} \n\n ➸ *BAIRRO:* ${res.data.bairro} \n\n ➸ *LOCALIDADE:* ${res.data.localidade} \n\n ➸ *UF:* ${res.data.uf}\n\n ➸ *DDD:* ${res.data.ddd} \n\n *📌BY:May Bot* `;
     conn.sendMessage(id, cep ,MessageType.text);
 }) 
@@ -425,7 +426,7 @@ axios.get(`https://viacep.com.br/ws/${aris}/json/`).then((res) => {
 if (text.includes("placa"))
   { const aris = text.replace(/!placa /, "") 
   axios.get(`https://apicarros.com/v1/consulta/${aris}/json`).then((res) =>{ 
-  let hasil = ` *🔍CONSULTA REALIZADA🔍* \n\n ➸ *ANO:*  ${res.data.ano}\n ➸ *ANO MODELO* : ${res.data.anoModelo}\n ➸ *CHASSI* : ${res.data.chassi}\n ➸ *CODIGO RETORNO* : ${res.data.codigoRetorno}\n ➸ *CODIGO SITUACAO* : ${res.data.codigoSituacao}\n ➸ *COR* : ${res.data.cor}\n ➸ *MARCA* : ${res.data.marca}\n ➸ *MUNICIPIO* : ${res.data.municipio}\n ➸ *SITUACAO* : ${res.data.situacao}\n ➸ *UF* : ${res.data.uf}\n *📌BY:May Bot*` 
+  let hasil = ` *🔍CONSULTA REALIZADA🔍* \n\n ➸ *ANO:*  ${res.data.ano}\n ➸ *ANO MODELO:* ${res.data.anoModelo}\n ➸ *CHASSI:* ${res.data.chassi}\n ➸ *CODIGO RETORNO:* ${res.data.codigoRetorno}\n ➸ *CODIGO SITUACAO:* ${res.data.codigoSituacao}\n ➸ *COR:* ${res.data.cor}\n ➸ *MARCA:* ${res.data.marca}\n ➸ *MUNICIPIO:* ${res.data.municipio}\n ➸ *SITUACAO:* ${res.data.situacao}\n ➸ *UF:* ${res.data.uf}\n *📌BY:May Bot*` 
   conn.sendMessage(id, hasil, MessageType.text); 
  })
  }		        
@@ -433,7 +434,7 @@ if (text.includes("placa"))
         if (messagesC.includes("preto")){
 		if (!isGroup) return
 		if (!isAntiRacismo) return
-		if (isGroupAdmins) return reply('cara, nao fale essas coisas, é errado, mas vc e admin n irei te banir')
+		if (isGroupAdmins) return reply('Não fale essas coisas é errado, vc é admin então não irei te banir.')
 		client.updatePresence(from, Presence.composing)
 		if (messagesC.includes("#izinadmin")) return reply("#izinadmin diterima")
 		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
@@ -466,7 +467,7 @@ if (text.includes("placa"))
 	        if (messagesC.includes("seupreto")){
 		if (!isGroup) return
 		if (!isAntiRacismo) return
-		if (isGroupAdmins) return reply('cara, nao fale essas coisas, é errado, mas vc e admin n irei te banir')
+		if (isGroupAdmins) return reply('Não fale essas coisas é errado, vc é admin então não irei te banir.')
 		client.updatePresence(from, Presence.composing)
 		if (messagesC.includes("#izinadmin")) return reply("#izinadmin diterima")
 		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
@@ -499,11 +500,11 @@ if (text.includes("placa"))
 	        if (messagesC.includes("macaco")){
 		if (!isGroup) return
 		if (!isAntiRacismo) return
-		if (isGroupAdmins) return reply('cara, nao fale essas coisas, é errado, mas vc e admin n irei te banir')
+		if (isGroupAdmins) return reply('Não fale essas coisas é errado, vc é admin então não irei te banir.')
 		client.updatePresence(from, Presence.composing)
 		if (messagesC.includes("#izinadmin")) return reply("#izinadmin diterima")
 		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-		reply(`tchau racista ${sender.split("@")[0]} voce sera expulso deste grupo em 5 segundos`)
+		reply(`Tchau racista ${sender.split("@")[0]} você sera expulso deste grupo em 5 segundos`)
 		setTimeout( () => {
 			client.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
 		}, 5000)
@@ -525,18 +526,18 @@ if (text.includes("placa"))
 		}, 1000)
 		setTimeout( () => {
 			client.updatePresence(from, Presence.composing)
-			reply("5 segundo KKKKKKKK tchau otário 🤙")
+			reply("5 segundos tchau 🤙")
 		}, 0)
 	}
 	
 	        if (messagesC.includes("pretoimundo")){
 		if (!isGroup) return
 		if (!isAntiRacismo) return
-		if (isGroupAdmins) return reply('cara, nao fale essas coisas, é errado, mas vc e admin n irei te banir')
+		if (isGroupAdmins) return reply('Não fale essas coisas é errado, vc é admin então não irei te banir.')
 		client.updatePresence(from, Presence.composing)
 		if (messagesC.includes("#izinadmin")) return reply("#izinadmin diterima")
 		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-		reply(`tchau racista ${sender.split("@")[0]} voce sera expulso deste grupo em 5 segundos`)
+		reply(`Tchau racista ${sender.split("@")[0]} você sera expulso deste grupo em 5 segundos`)
 		setTimeout( () => {
 			client.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
 		}, 5000)
@@ -558,18 +559,18 @@ if (text.includes("placa"))
 		}, 1000)
 		setTimeout( () => {
 			client.updatePresence(from, Presence.composing)
-			reply("5 segundo KKKKKKKK tchau otário 🤙")
+			reply("5 segundos tchau 🤙")
 		}, 0)
 	}
 	
 	        if (messagesC.includes("pq vc e preto")){
 		if (!isGroup) return
 		if (!isAntiRacismo) return
-		if (isGroupAdmins) return reply('cara, nao fale essas coisas, é errado, mas vc e admin n irei te banir')
+		if (isGroupAdmins) return reply('Não fale essas coisas é errado, vc é admin então não irei te banir.')
 		client.updatePresence(from, Presence.composing)
 		if (messagesC.includes("#izinadmin")) return reply("#izinadmin diterima")
 		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-		reply(`tchau racista ${sender.split("@")[0]} voce sera expulso deste grupo em 5 segundos`)
+		reply(`Tchau racista ${sender.split("@")[0]} você sera expulso deste grupo em 5 segundos`)
 		setTimeout( () => {
 			client.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
 		}, 5000)
@@ -591,18 +592,18 @@ if (text.includes("placa"))
 		}, 1000)
 		setTimeout( () => {
 			client.updatePresence(from, Presence.composing)
-			reply("5 segundo KKKKKKKK tchau otário 🤙")
+			reply("5 segundos tchau 🤙")
 		}, 0)
 	}
 	
 	        if (messagesC.includes("://chat.whatsapp.com/")){
 		if (!isGroup) return
 		if (!isAntiLink) return
-		if (isGroupAdmins) return reply('vc é admin, então n irei te dar ban por usar links, rlx 🙂')
+		if (isGroupAdmins) return reply('Você é admin, então n irei te dar ban por usar links🙂')
 		client.updatePresence(from, Presence.composing)
 		if (messagesC.includes("#izinadmin")) return reply("#izinadmin diterima")
 		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-		reply(`link detectado ${sender.split("@")[0]} voce sera expulso deste grupo em 5 segundos`)
+		reply(`Link detectado ${sender.split("@")[0]} você sera expulso deste grupo em 5 segundos`)
 		setTimeout( () => {
 			client.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
 		}, 5000)
@@ -624,18 +625,18 @@ if (text.includes("placa"))
 		}, 1000)
 		setTimeout( () => {
 			client.updatePresence(from, Presence.composing)
-			reply("5 segundo KKKKKKKK tchau otário 🤙")
+			reply("5 segundos tchau 🤙")
 		}, 0)
 	}
 	
 		        if (messagesC.includes("https://")){
 		if (!isGroup) return
 		if (!isAntiLink) return
-		if (isGroupAdmins) return reply('vc é admin, então n irei te dar ban por usar links, rlx 🙂')
+		if (isGroupAdmins) return reply('Você é admin, então n irei te dar ban por usar links🙂')
 		client.updatePresence(from, Presence.composing)
 		if (messagesC.includes("#izinadmin")) return reply("#izinadmin diterima")
 		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-		reply(`link detectado ${sender.split("@")[0]} voce sera expulso deste grupo em 5 segundos`)
+		reply(`Link detectado ${sender.split("@")[0]} você sera expulso deste grupo em 5 segundos`)
 		setTimeout( () => {
 			client.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
 		}, 5000)
@@ -657,7 +658,7 @@ if (text.includes("placa"))
 		}, 1000)
 		setTimeout( () => {
 			client.updatePresence(from, Presence.composing)
-			reply("5 segundo KKKKKKKK tchau otário 🤙")
+			reply("5 segundos tchau 🤙")
 		}, 0)
 	}
 	
