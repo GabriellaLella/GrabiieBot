@@ -730,18 +730,6 @@ if (text.includes("placa"))
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
 	
-			if (messagesC.includes("*menu")){
-			client.updatePresence(from, Presence.composing)
-			tujuh = fs.readFileSync('./assets/pressao.mp3');
-            client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-	}
-	
-			if (messagesC.includes("@558981246187")){
-			client.updatePresence(from, Presence.composing)
-			tujuh = fs.readFileSync('./assets/chapa.mp3');
-            client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-	}
-	
 			if (messagesC.includes("Hehehe")){
 			client.updatePresence(from, Presence.composing)
 			tujuh = fs.readFileSync('./assets/hehe.mp3');
@@ -791,45 +779,15 @@ if (text.includes("placa"))
             client.sendMessage(from, d, sticker, {quoted: mek})
     }
           
-	        if (messagesC.includes("sexo")){
+	        if (messagesC.includes("yamete")){
 			client.updatePresence(from, Presence.composing)
-			tujuh = fs.readFileSync('./assets/Sexo.mp3');
+			tujuh = fs.readFileSync('./assets/ya.mp3');
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
 	
-				if (messagesC.includes("canta")){
+				if (messagesC.includes("kudasai")){
 			client.updatePresence(from, Presence.composing)
-			tujuh = fs.readFileSync('./assets/canto.mp3');
-            client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-	}
-			
-			if (messagesC.includes("risos")){
-			client.updatePresence(from, Presence.composing)
-			tujuh = fs.readFileSync('./assets/kiko.mp3');
-            client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-	}
-	
-			if (messagesC.includes("grita")){
-			client.updatePresence(from, Presence.composing)
-			tujuh = fs.readFileSync('./assets/a.mp3');
-            client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-	}
-			
-			if (messagesC.includes("gemidinho")){
-			client.updatePresence(from, Presence.composing)
-			tujuh = fs.readFileSync('./assets/fodaze.mp3');
-            client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-	}
-	
-			if (messagesC.includes("bv")){
-			client.updatePresence(from, Presence.composing)
-			tujuh = fs.readFileSync('./assets/bv.mp3');
-            client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-	}
-		
-			if (messagesC.includes("fds")){
-			client.updatePresence(from, Presence.composing)
-			tujuh = fs.readFileSync('./assets/tmnc.mp3');
+			tujuh = fs.readFileSync('./assets/ya.mp3');
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
 
@@ -864,7 +822,8 @@ if (text.includes("placa"))
 			if (!isCmd && isGroup) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;31mRECV\x1b[1;37m]', time, color('Message'), 'do leke', color(sender.split('@')[0]), 'in', color(groupName), 'args :', color(args.length))
 			switch(command) {
 	            case 'menu':
-                    putagg = await getBuffer(`https://i.ibb.co/BcJ3bcJ/IMG-20210321-WA0162.jpg`)
+	            case 'help':
+                    putagg = await getBuffer(`https://i.imgur.com/4UdD7Vr.jpg`)
                     client.sendMessage(from, putagg, image, {quoted: mek, caption: help(prefix)})
                     break
 				case 'help1':
