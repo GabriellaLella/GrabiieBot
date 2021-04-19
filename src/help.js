@@ -19,7 +19,7 @@ Seja bem-vindo ${pushname2}
   https://www.youtube.com/c/Grabiie
   📸 Instagram do criador:
   https://www.instagram.com/_grabiie
-  ✌ Base: Cᴀᴜss, Dᴀʀᴋ e Meliodas-rai
+  ✌ Base: Causs, Dark e Meliodas-rai
 
 🧐 *SOBRE*
   │
