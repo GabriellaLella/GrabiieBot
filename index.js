@@ -3455,55 +3455,16 @@ case 'narutologo':
 				    await limitAdd(sender) 	
 				    break 
 				case 'porno':
-				    if (!isGroup) return reply(mess.only.group)
-					if (!isGroupAdmins) return reply(mess.only.admin)
-					memein = await kagApi.memeindo()
-					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdU0UmT8RigE3Hbr80gmigjb2AdnPJklcQ3A&usqp=CAU`)
-					buffer = await getBuffer(`https://fotosdemulheresnuas.net/wp-content/uploads/2018/11/novinha-petuda-fotos-4.jpg`)
-					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqWoYHFA_SDgUip6MtvimWRdub_lshAn5Edg&usqp=CAU`)
-					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwvLmbqW9LeOCpXiGxgu3By4eQEmJM2Xp26Q&usqp=CAU`)
-					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcnhmpQD1C1Dp7I2_kpi13gAsuoudOPPraog&usqp=CAU`)
-					buffer = await getBuffer(`https://fotosdemulheresnuas.net/wp-content/uploads/2018/12/prima-novinha-pelada-6.jpg`)
-					buffer = await getBuffer(`https://fotosdemulheresnuas.net/wp-content/uploads/2018/12/Mia-Khalifa-fotos-5.jpg`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'heheheheheh'})
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'heheheheheh'})
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'heheheheheh'})
-					buffer = await getBuffer(`https://fotosdemulheresnuas.net/wp-content/uploads/2018/12/Mia-Khalifa-fotos-6.jpg`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'heheheheheh'})
-					buffer = await getBuffer(`https://fotosdemulheresnuas.net/wp-content/uploads/2018/12/Mia-Khalifa-fotos-7.jpg`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'heheheheheh'})
-					buffer = await getBuffer(`https://fotosdemulheresnuas.net/wp-content/uploads/2018/12/Mia-Khalifa-fotos-8.jpg`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'heheheheheh'})
-					buffer = await getBuffer(`https://fotosdemulheresnuas.net/wp-content/uploads/2018/12/Mia-Khalifa-fotos-10.jpg`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'heheheheheh'})
-					buffer = await getBuffer(`https://fotosdemulheresnuas.net/wp-content/uploads/2018/12/Mia-Khalifa-fotos-16.jpg`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'heheheheheh'})
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'heheheheheh'})
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'heheheheheh'})
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'heheheheheh'})
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'k'})
-					break
-				case 'belle2':
-					memein = await kagApi.memeindo()
-					buffer = await getBuffer(`https://i.pinimg.com/originals/24/5f/91/245f91208f9030724dbc8d1bede2e9ff.gif`)
-					client.sendMessage(from, buffer, sticker, {quoted: mek, caption: 'slc'})
+			     	memein = await kagApi.memeindo()
+					buffer = await getBuffer(`https://i.imgur.com/4UdD7Vr.jpg`)
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: '_Principais sites_\nhttps://pornhub.com/ \nhttps://www.xvideos.com/ \n https://xhamster.com '})
 					break
 				case 'bot':
 			     	memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://i.imgur.com/feOhRDK.png`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*_Github oficial do bot_\nhttps://github.com/Grabiie/GrabiieBot '})
 					break
-				case 'belle3':
-					memein = await kagApi.memeindo()
-					buffer = await getBuffer(`https://1.bp.blogspot.com/-3K_b14RzHTA/XwTW7SQTPRI/AAAAAAAAPtY/UOaKURECbzwXfvASa3g6Pz0D_Ha73Dw4wCLcBGAsYHQ/s1600/boabronha_10.jpg`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'olha p isso mano, pqp '})
-					break
-				case 'akeno':
-					meme = await kagApi.memes()
-					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnFAocqaur5ZX1DPN6ZGP8PJy2cNppas_gYA&usqp=CAU`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: '.......'})
-					break
-				case 'loli1':
+				case 'loli':
 					memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://i.imgur.com/iphQUGi.jpg`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'hmm, então quer ver loli?'})
@@ -3513,43 +3474,24 @@ case 'narutologo':
 					buffer = await getBuffer(`https://i.imgur.com/8U9GwX4.jpg`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Cara bate pra 2d 😂'})
 					break
-				case 'bomdia':
+				case 'belle
 					memein = await kagApi.memeindo()
-					buffer = await getBuffer(`https://i.imgur.com/7VL9cFf.jpg`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Bom dia, vcs sao fodas ❤️'})
+					buffer = await getBuffer(`https://i.imgur.com/ZEWlLuc.png`)
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: ''})
 					break
-				case 'boatarde':
-					memein = await kagApi.memeindo()
-					buffer = await getBuffer(`https://i.imgur.com/JaO3yoV.jpg`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Boa tarde, rapeize 😎👍'})
-					break
-				case 'boanoite':
-					memein = await kagApi.memeindo()
-					buffer = await getBuffer(`https://i.imgur.com/yOFxSUR.jpg`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Boa noite fml ❤️'})
-					break
-                case 'belle':                 
-				 data = fs.readFileSync('./src/belle.js');
-                 jsonData = JSON.parse(data);
-                 randIndex = Math.floor(Math.random() * jsonData.length);
-                 randKey = jsonData[randIndex];
-                hasil = await getBuffer(randKey.result)
-                sendImage(hasil, mek, '*Belle :V*')
-				break
-				case 'belle1':
-					memein = await kagApi.memeindo()
-					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ7ot6RZPnXSJFFKVjPoeXHjTYyi6uk5W_mA&usqp=CAU`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: '👀️'})
-					break
-				case 'lofi':
-					memein = await kagApi.memeindo()
-					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL9hZBPRo16fIhsIus3t1je2oAU23pQqBpfw&usqp=CAU`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: '️💆'})
-					break
-				case 'malkova':
-					memein = await kagApi.memeindo()
-					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtbo5EcVSGj-IvEVznHIgMZ9vjFptZfvprtg&usqp=CAU`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: '️💆'})
+				case 'casal':
+					if (!isGroup) return reply(mess.only.group)
+						membr = []
+						const suamae11 = groupMembers
+						const suamae21 = groupMembers
+						const teupai11 = suamae11[Math.floor(Math.random() * suamae11.length)]
+						const teupai21 = suamae21[Math.floor(Math.random() * suamae21.length)]
+						var shipted1 = ["1%", `2%`, `3%`, `4%`, `5%`, `6%`, `7%`, `8%`, `9%`, `10%`, `11%`, `12%`, `13%`, `14%`, `15%`, `16%`, `17%`, `18%`, `19%`, `20%`, `21%`, `22%`, `23%`, `24%`, `25%`, `26%`, `27%`, `28%`, `29%`, `30%`, `31%`, `32%`, `33%`, `34%`, `35%`, `36%`, `37%`, `38%`, `39%`, `40%`, `41%`, `42%`, `43%`, `44%`, `45%`, `46%`, `47%`, `48%`, `49%`, `50%`, `51%`, `52%`, `53%`, `54%`, `55%`, `56%`, `57%`, `58%`, `59%`, `60%`, `61%`, `62%`, `63%`, `64%`, `65%`, `66%`, `67%`, `68%`, `69%`, `70%`, `71%`, `72%`, `73%`, `74%`, `75%`, `76%`, `77%`, `78%`, `79%`, `80%`, `81%`, `82%`, `83%`, `84%`, `85%`, `86%`, `87%`, `88%`, `89%`, `90%`, `91%`, `92%`, `93%`, `94%`, `95%`, `96%`, `97%`, `98%`, `99%`, `100%`]
+						const shipted = shipted1[Math.floor(Math.random() * shipted1.length)]
+						teks = `Hmmm.... Eu Shipo 💘\n\n1= @${teupai11.jid.split('@')[0]}\ne esse\n2= @${teupai21.jid.split('@')[0]}\ncom uma porcentagem de: ${shipted}`
+						membr.push(teupai11.jid)
+						membr.push(teupai21.jid)
+						mentions(teks, membr, true)
 					break
 				case 'canal':
 					memein = await kagApi.memeindo()
@@ -3565,16 +3507,6 @@ case 'narutologo':
 					memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKlc2hMIJ4PjW5tIXltrKe6xeBoKPLKTZMnQ&usqp=CAU`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: '🤭'})
-					break
-				case 'boanoite':
-					memein = await kagApi.memeindo()
-					buffer = await getBuffer(`https://imgur.com/gallery/4HeRfuO`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'bom dia ❤️'})
-					break
-				case 'bomdia':
-					memein = await kagApi.memeindo()
-					buffer = await getBuffer(`https://imgur.com/gallery/zFvzl2S`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'bom dia ❤️'})
 					break
 				case 'termux':
 					meme = await kagApi.memes()
@@ -3608,29 +3540,14 @@ case 'narutologo':
 					prefix = args[0]
 					reply(`O prefixo foi alterado com sucesso para : ${prefix}`)
 					break
-				case 'loli':
-					loli.getSFWLoli(async (err, res) => {
-						if (err) return reply('❌ *ERROR* ❌')
-						buffer = await getBuffer(res.url)
-						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'lolizinha'})
-					})
-					break
                 case 'lolih':
                     gatauda = body.slice(6)
                     reply(mess.wait)
-                    anu = await fetchJson(`https://tobz-api.herokuapp.com/api/randomloli?apikey=BotWeA`, {method: 'get'})
+                    anu = await fetchJson(`https://tobz-api.herokuapp.com/api/randomloli?apikey=KVEFVXtj4099OZ4CCWIC`, {method: 'get'})
                     buffer = await getBuffer(anu.result)
                     client.sendMessage(from, buffer, image, {quoted: mek})
                     await limitAdd(sender)
                     break
-				case 'nsfwloli':
-					if (!isNsfw) return reply('*COMANDO SO FUNCIONA NO PV AMIGO.*')
-					loli.getNSFWLoli(async (err, res) => {
-						if (err) return reply('❌ *ERRO* ❌')
-						buffer = await getBuffer(res.url)
-						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Jangan jadiin bahan buat comli om'})
-					})
-					break
 				case 'pronomeneu':
 					if (args.length < 1) return reply('Onde está o texto, hum?')
 					anu = await fetchJson(`https://mhankbarbars.herokuapp.com/api/hilih?teks=${body.slice(7)}`, {method: 'get'})
@@ -3918,7 +3835,7 @@ case 'narutologo':
                                       break
 				case 'clonar':
 					if (!isGroup) return reply(mess.only.group)
-					if (!isGroupAdmins) return reply(mess.only.admin)
+					if (!isOwner) return reply('Comando so para o meu dono!')
 					if (args.length < 1) return reply('Marque a pessoa que você quer clonar\n\n*EXEMPLO:* clone @')
 					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Tag cvk')
 					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid[0]
@@ -3934,7 +3851,7 @@ case 'narutologo':
 					break
 		        case 'setfoto2':
                     if (!isGroup) return reply(mess.only.group)
-                    if (!isadminbot) return reply('Quem é Você?')
+		    if (!isGroupAdmins) return reply(mess.only.admin)
                     if (!isBotGroupAdmins) return reply(mess.only.Badmin)
                     media = await client.downloadAndSaveMediaMessage(mek)
                     await client.updateProfilePicture (from, media)
