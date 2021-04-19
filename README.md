@@ -7,7 +7,7 @@
         <a href="https://github.com/grabiie"><img title="Autor"    src="https://img.shields.io/badge/Autor-Grabiie-blue.svg?style=for-the-badge&logo=github"></a>
     </p>
     <p>
-        <a href="https://github.com/grabiie/followers"><img title="Followers" src="https://img.shields.io/github/followers/grabiie?color=yellow&style=flat-square"></a>
+        <a href="https://github.com/grabiie/followers"><img title="Seguidores" src="https://img.shields.io/github/followers/grabiie?color=yellow&style=flat-square"></a>
         <a href="https://github.com/grabiie/GrabiieBot/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/grabiie/GrabiieBot?label=Watchers&color=yellow&style=flat-square"></a>
         <a href="https://github.com/grabiie/GrabiieBot/network/members"><img title="Forks" src="https://img.shields.io/github/forks/grabiie/GrabiieBot?color=yellow&style=flat-square"></a>
         <a href="https://github.com/grabiie/GrabiieBot/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/grabiie/GrabiieBot?color=yellow&style=flat-square"></a>
