@@ -148,7 +148,6 @@ Seja bem-vindo
   ├─ 📌 .nomegp
   ├─ 📌 .darkjokes (memes aleatórios)
   ├─ 📌 .animecry
-  ├─ 📌 .gay1
   ├─ 📌 .next
   ├─ 📌 .alerta
   ├─ 📌 .belle
