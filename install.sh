@@ -9,5 +9,6 @@ apt-get install wget
 apt-get install tesseract
 wget -O ~/../usr/share/tessdata/ind.traineddata "https://github.com/tesseract-ocr/tessdata/blob/master/ind.traineddata?raw=true"
 npm install
+npm i -g pm2
 
-echo "[*] obrigado por utilizar o bot \"Caussbot\" causs agradece"
+echo "[*] Obrigado por utilizar o bot \"GrabiieBot\" Grabiie agradece"
