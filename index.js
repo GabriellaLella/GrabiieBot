@@ -3477,7 +3477,7 @@ case 'narutologo':
 				case 'belle
 					memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://i.imgur.com/ZEWlLuc.png`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: ''})
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Em-breve meu amigo'})
 					break
 				case 'casal':
 					if (!isGroup) return reply(mess.only.group)
