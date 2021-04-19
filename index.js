@@ -747,35 +747,9 @@ if (text.includes("placa"))
 			tujuh = fs.readFileSync('./assets/Dbz.mp3');
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
-            if (messagesC.includes("vsfd")){
+            if (messagesC.includes("grabiie")){
 			client.updatePresence(from, Presence.composing) 
-	     	const d = fs.readFileSync('./sticker/vsfd.webp');
-            client.sendMessage(from, d, sticker, {quoted: mek})
-    }
-            
-            if (messagesC.includes("gay")){
-			client.updatePresence(from, Presence.composing) 
-	     	const d = fs.readFileSync('./sticker/gay.webp');
-            client.sendMessage(from, d, sticker, {quoted: mek})
-    }
-          if (messagesC.includes("kkkkkk")){
-			client.updatePresence(from, Presence.composing) 
-	     	const d = fs.readFileSync('./sticker/kkk.webp');
-            client.sendMessage(from, d, sticker, {quoted: mek})
-    }
-          if (messagesC.includes("vida")){
-			client.updatePresence(from, Presence.composing) 
-	     	const d = fs.readFileSync('./sticker/vida.webp');
-            client.sendMessage(from, d, sticker, {quoted: mek})
-    }
-          if (messagesC.includes("gostoso")){
-			client.updatePresence(from, Presence.composing) 
-	     	const d = fs.readFileSync('./sticker/gostoso.webp');
-            client.sendMessage(from, d, sticker, {quoted: mek})
-    }
-          if (messagesC.includes("eita")){
-			client.updatePresence(from, Presence.composing) 
-	     	const d = fs.readFileSync('./sticker/eita.webp');
+	     	const d = fs.readFileSync('./sticker/grabiie.webp');
             client.sendMessage(from, d, sticker, {quoted: mek})
     }
           
