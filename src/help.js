@@ -41,7 +41,6 @@ Seja bem-vindo
   ├─ 📌 .memeindo
   ├─ 📌 .tts
   ├─ 📌 .lolih [on]
-  ├─ 📌 .nsfwloli [off]
   ├─ 📌 .url2img
   ├─ 📌 .leens [na legenda]
   ├─ 📌 .wait [na legenda]
@@ -62,24 +61,18 @@ Seja bem-vindo
   ├─ 📌 .desbloquear [@]
   ├─ 📌 .limpar
   ├─ 📌 .bemvindo [1/0]
-  ├─ 📌 .clonar [@]
-  ├─ 📌 .help1
-  ├─ 📌 .dono
-  ├─ 📌 .owner
-  ├─ 📌 .tts [texto]
+  ├─ 📌 .clonar
+  ├─ 📌 .owner ou .dono
+  ├─ 📌 .tts
   ├─ 📌 .setnome
   ├─ 📌 .termux
   ├─ 📌 .setfoto
   ├─ 📌 .grupoinfo
   ├─ 📌 .ytmp4
-  ├─ 📌 .bomdia
-  ├─ 📌 .boatarde
-  ├─ 📌 .boanoite
   ├─ 📌 .marcar
   ├─ 📌 .marcar2
   ├─ 📌 .marcar3
-  ├─ 📌 .loli [off]
-  ├─ 📌 .loli1
+  ├─ 📌 .loli
   ├─ 📌 .hentai
   ├─ 📌 .dono
   ├─ 📌 .porno
@@ -92,10 +85,7 @@ Seja bem-vindo
   ├─ 📌 .sakura [aleatórias]
   ├─ 📌 .naruto [aleatórias]
   ├─ 📌 .meme
-  ├─ 📌 .lofi
-  ├─ 📌 .malkova
   ├─ 📌 .canal
-  ├─ 📌 .nsfwloli1
   ├─ 📌 .reislin
   ├─ 📌 .simih 1 (para ativar)
   ├─ 📌 .simih 0 (para desativar)
@@ -161,7 +151,7 @@ Seja bem-vindo
   ├─ 📌 .gay1
   ├─ 📌 .next
   ├─ 📌 .alerta
-  ├─ 📌 .belle [img aleatórias]
+  ├─ 📌 .belle
   ├─ 📌 .pronomeneu [texto]
   ├─ 📌 .hobby
 Em teste
