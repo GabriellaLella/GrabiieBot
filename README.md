@@ -25,8 +25,12 @@
 - [Contatos](#Contato)
 
 # Sobre
+
+```
 > Um bot de WhatsApp que recebe atualizações de vez em quando.
 > Base: https://github.com/Meliodas-rai/Bot
+```
+
 # Ferramentas necessárias
 
 ```
