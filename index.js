@@ -805,10 +805,10 @@ if (text.includes("placa"))
 			const isQuotedImage = type === 'extendedTextMessage' && content.includes('imageMessage')
 			const isQuotedVideo = type === 'extendedTextMessage' && content.includes('videoMessage')
 			const isQuotedSticker = type === 'extendedTextMessage' && content.includes('stickerMessage')
-			if (!isGroup && isCmd) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;32mExecutou\x1b[1;37m]', time, color(command), 'número:', color(sender.split('@')[0]), 'execuções:', color(args.length))
-			if (!isGroup && !isCmd) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;31mRecebido\x1b[1;37m]', time, color('Message'), 'número:', color(sender.split('@')[0]), 'execuções:', color(args.length))
-			if (isCmd && isGroup) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;32mExecutou\x1b[1;37m]', time, color(command), 'número:', color(sender.split('@')[0]), 'grupo:', color(groupName), 'execuções:', color(args.length))
-			if (!isCmd && isGroup) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;31mRecebido\x1b[1;37m]', time, color('Message'), 'número:', color(sender.split('@')[0]), 'grupo:', color(groupName), 'execuções:', color(args.length))
+			if (!isGroup && isCmd) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;32mExecutou\x1b[1;37m]', time, color(command), 'número:', color(sender.split('@')[0]), 'args:', color(args.length))
+			if (!isGroup && !isCmd) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;31mRecebido\x1b[1;37m]', time, color('Message'), 'número:', color(sender.split('@')[0]), 'args:', color(args.length))
+			if (isCmd && isGroup) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;32mExecutou\x1b[1;37m]', time, color(command), 'número:', color(sender.split('@')[0]), 'grupo:', color(groupName), 'args:', color(args.length))
+			if (!isCmd && isGroup) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;31mRecebido\x1b[1;37m]', time, color('Message'), 'número:', color(sender.split('@')[0]), 'grupo:', color(groupName), 'args:', color(args.length))
 			switch(command) {
 	            case 'menu':
 	            case 'help':
