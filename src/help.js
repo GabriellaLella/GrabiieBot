@@ -13,7 +13,6 @@ Seja bem-vindo
   🧐 *informações*
   ✔ Prefix: 「  ${prefix}  」
   😃 Criador: Grabiie
-  📞 Wame:
   wa.me/5535999191111
   🎲 Canal do criador:
   https://www.youtube.com/c/Grabiie
@@ -73,7 +72,6 @@ Seja bem-vindo
   ├─ 📌 .marcar2
   ├─ 📌 .marcar3
   ├─ 📌 .loli
-  ├─ 📌 .hentai
   ├─ 📌 .dono
   ├─ 📌 .porno
   ├─ 📌 .mia [aleatórias]
@@ -92,7 +90,6 @@ Seja bem-vindo
   ├─ 📌 .simi (sua mensagem)
   ├─ 📌 .gado
   ├─ 📌 .dbz
-  ├─ 📌 .gtts loli
   ├─ 📌 .hidegp
   ├─ 📌 .dado
   ├─ 📌 .cekvip
@@ -113,13 +110,15 @@ Seja bem-vindo
   ├─ 📌 .level
   ├─ 📌 .add
   ├─ 📌 .promover
-  ├─ 📌 .setfoto [na legenda]
-  ├─ 📌 .setname [texto]
+  ├─ 📌 .setfoto
+  ├─ 📌 .setname
   ├─ 📌 .rebaixar
   ├─ 📌 .admins
-  ├─ 📌 .marcar
-  ├─ 📌 .marcar2
-  ├─ 📌 .marcar3
+  ├─ 📌 .marcar ou .tagall
+  ├─ 📌 .marcar1 ou .tagall1
+  ├─ 📌 .marcar2 ou .tagall2
+  ├─ 📌 .marcar3 ou .tagall3
+  ├─ 📌 .marcar4 ou .tagall4
   ├─ 📌 .bemvindo [1/0]
   ├─ 📌 .grupoinfo
   ├─ 📌 .setdesc
@@ -134,7 +133,6 @@ Seja bem-vindo
   ├─ 📌 .pinterest (nome)
   ├─ 📌 .desligar (so para o dono)
   ├─ 📌 .timer
-  ├─ 📌 .neko
   ├─ 📌 .ttp [texto]
   ├─ 📌 .testime
   ├─ 📌 .tomp3
@@ -150,7 +148,6 @@ Seja bem-vindo
   ├─ 📌 .animecry
   ├─ 📌 .next
   ├─ 📌 .alerta
-  ├─ 📌 .belle
   ├─ 📌 .pronomeneu [texto]
   ├─ 📌 .hobby
 Em teste
