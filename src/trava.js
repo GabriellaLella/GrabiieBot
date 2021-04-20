@@ -1,7 +1,6 @@
 const travar = (prefix) => {
 
-	return `
-aff teste`
+	return `trava zap o krl.`
 }
 exports.travar = travar
 
