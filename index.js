@@ -789,6 +789,11 @@ if (text.includes("placa"))
 			client.updatePresence(from, Presence.composing)
 			reply("Eu tbm te amo")
 	}
+
+		if (messagesC.includes("Eu tbm te amo")){
+			client.updatePresence(from, Presence.composing)
+			reply("😍")
+	}
 	
 		if (messagesC.includes("Alguem ai pra jogar?")){
 			client.updatePresence(from, Presence.composing)
@@ -800,10 +805,10 @@ if (text.includes("placa"))
 			const isQuotedImage = type === 'extendedTextMessage' && content.includes('imageMessage')
 			const isQuotedVideo = type === 'extendedTextMessage' && content.includes('videoMessage')
 			const isQuotedSticker = type === 'extendedTextMessage' && content.includes('stickerMessage')
-			if (!isGroup && isCmd) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;32mEXEC\x1b[1;37m]', time, color(command), 'do leke', color(sender.split('@')[0]), 'args :', color(args.length))
-			if (!isGroup && !isCmd) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;31mRECV\x1b[1;37m]', time, color('Message'), 'do leke', color(sender.split('@')[0]), 'args :', color(args.length))
-			if (isCmd && isGroup) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;32mEXEC\x1b[1;37m]', time, color(command), 'do leke', color(sender.split('@')[0]), 'in', color(groupName), 'args :', color(args.length))
-			if (!isCmd && isGroup) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;31mRECV\x1b[1;37m]', time, color('Message'), 'do leke', color(sender.split('@')[0]), 'in', color(groupName), 'args :', color(args.length))
+			if (!isGroup && isCmd) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;32mExecutou\x1b[1;37m]', time, color(command), 'número:', color(sender.split('@')[0]), 'execuções:', color(args.length))
+			if (!isGroup && !isCmd) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;31mRecebido\x1b[1;37m]', time, color('Message'), 'número:', color(sender.split('@')[0]), 'execuções:', color(args.length))
+			if (isCmd && isGroup) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;32mExecutou\x1b[1;37m]', time, color(command), 'número:', color(sender.split('@')[0]), 'grupo:', color(groupName), 'execuções:', color(args.length))
+			if (!isCmd && isGroup) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;31mRecebido\x1b[1;37m]', time, color('Message'), 'número:', color(sender.split('@')[0]), 'grupo:', color(groupName), 'execuções:', color(args.length))
 			switch(command) {
 	            case 'menu':
 	            case 'help':
