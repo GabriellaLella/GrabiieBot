@@ -365,7 +365,7 @@ async function starts() {
             }
         }
 if (text.includes("ip"))
-  { const aris = text.replace(/!ip /, "") 
+  { const aris = text.replace(/.ip /, "") 
   axios.get(`https://mnazria.herokuapp.com/api/check?ip=${aris}`).then((res) =>{ 
   let hasil = ` *🔍CONSULTA REALIZADA🔍* \n\n ➸ *CIDADE:*  ${res.data.city}\n ➸ *Latitude:* ${res.data.latitude}\n ➸ *Longtitude:* ${res.data.longitude}\n ➸ *REGIÃO:* ${res.data.region_name}\n ➸ *UF:* ${res.data.region_code}\n ➸ *IP:* ${res.data.ip}\n ➸ *TIPO:* ${res.data.type}\n ➸ *CEP:* ${res.data.zip}\n ➸ *LOCALIDADE:* ${res.data.location.geoname_id}\n ➸ *CAPITAL:* ${res.data.location.capital}\n ➸ *DDD:* ${res.data.location.calling_code}\n ➸ *PAÍS:* ${res.data.location.country_flag_emoji}\n *📌BY:May Bot*` 
   conn.sendMessage(id, hasil, MessageType.text); 
@@ -1310,16 +1310,8 @@ if (text.includes("placa"))
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					break
                  case 'nomegp':
-		             if (args.length < 1) return reply ('o nome do grupo é: *${groupMetadata.subject}*')
+		             if (args.length < 1) return reply ('O nome do grupo é: ${groupMetadata.subject}')
 		             break
-				case 'loli2':
-					if (!isAnime) return reply('❌ *Deve ativar o modo Anime* ❌')
-					anu = await fetchJson(`https://api.vhtear.com/pinterest?query=loli&apikey={BELI APIKEY BIAR WORK DI 0816546638}`, {method: 'get'})
-					var lol = JSON.parse(JSON.stringify(anu.result));
-					var i2 =  lol[Math.floor(Math.random() * lol.length)];
-					nyeee = await getBuffer(i2)
-					client.sendMessage(from, nyeee, image, { caption: 'Oni chan baka!!', quoted: mek })
-					break
 					case 'xd':				
 					if (args.length < 1) return reply(mess.wait)
 					pinte = body.slice(11)
@@ -1329,8 +1321,7 @@ if (text.includes("placa"))
 					var trest =  pin[Math.floor(Math.random() * pin.length)];
 					pineq = await getBuffer(trest)
 					client.sendMessage(from, pineq, image, { caption: '*Pinterest*\n\n*Resultado Pesquisa : '+pinte+'*', quoted: mek })
-					break
-//@darkYT					
+					break	
 				case 'pokemon':
                     client.updatePresence(from, Presence.composing) 
 					data = await fetchJson(`https://api.fdci.se/rep.php?gambar=pokemon`, {method: 'get'})
@@ -3343,8 +3334,8 @@ case 'narutologo':
 					premium = args[0]
 					reply(`Comando aceito adicionar usuário premium: ${premium}`)
 					break
-                 case 'calculadora':
-				     if (args.length < 1) return reply(`[❗] Enviar pedidos *${prefix}calculadora [ Números ]*\nExemplo : ${prefix}calculadora 12*12\n*NOTA* :\n- Para multiplicação usando *\n- Para uso adicional +\n- Para redução do uso -\n- Para compartilhar usando /`)
+                               case 'calculadora':
+				     if (args.length < 1) return reply(`[❗] Enviar pedidos *${prefix}calculadora [ Números ]*\nExemplo: ${prefix}calculadora 12*12\n*NOTA* :\n- Para multiplicação usando *\n- Para uso adicional +\n- Para redução do uso -\n- Para compartilhar usando /`)
 				    mtk = `${body.slice(12)}`
 				    anu = await fetchJson(`https://api.vhtear.com/calculator?value=${mtk}&apikey=${VthearApi}`, {method: 'get'})
 				    client.sendMessage(from, `*${anu.result.data}*`, text, {quoted: mek})
@@ -3358,7 +3349,7 @@ case 'narutologo':
 				case 'bot':
 			     	memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://i.imgur.com/feOhRDK.png`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*_Github oficial do bot_\nhttps://github.com/Grabiie/GrabiieBot '})
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*Github oficial do bot*\nhttps://github.com/Grabiie/GrabiieBot '})
 					break
 				case 'loli':
 					memein = await kagApi.memeindo()
@@ -3374,7 +3365,7 @@ case 'narutologo':
 						const teupai21 = suamae21[Math.floor(Math.random() * suamae21.length)]
 						var shipted1 = ["1%", `2%`, `3%`, `4%`, `5%`, `6%`, `7%`, `8%`, `9%`, `10%`, `11%`, `12%`, `13%`, `14%`, `15%`, `16%`, `17%`, `18%`, `19%`, `20%`, `21%`, `22%`, `23%`, `24%`, `25%`, `26%`, `27%`, `28%`, `29%`, `30%`, `31%`, `32%`, `33%`, `34%`, `35%`, `36%`, `37%`, `38%`, `39%`, `40%`, `41%`, `42%`, `43%`, `44%`, `45%`, `46%`, `47%`, `48%`, `49%`, `50%`, `51%`, `52%`, `53%`, `54%`, `55%`, `56%`, `57%`, `58%`, `59%`, `60%`, `61%`, `62%`, `63%`, `64%`, `65%`, `66%`, `67%`, `68%`, `69%`, `70%`, `71%`, `72%`, `73%`, `74%`, `75%`, `76%`, `77%`, `78%`, `79%`, `80%`, `81%`, `82%`, `83%`, `84%`, `85%`, `86%`, `87%`, `88%`, `89%`, `90%`, `91%`, `92%`, `93%`, `94%`, `95%`, `96%`, `97%`, `98%`, `99%`, `100%`]
 						const shipted = shipted1[Math.floor(Math.random() * shipted1.length)]
-						teks = `Hmmm.... Eu Shipo 💘\n\n@${teupai11.jid.split('@')[0]}\n@${teupai21.jid.split('@')[0]}\ncom uma porcentagem de: ${shipted}`
+						teks = `Eu Shipo 💘\n\n@${teupai11.jid.split('@')[0]}\n@${teupai21.jid.split('@')[0]}\ncom uma porcentagem de: ${shipted}`
 						membr.push(teupai11.jid)
 						membr.push(teupai21.jid)
 						mentions(teks, membr, true)
@@ -3384,19 +3375,9 @@ case 'narutologo':
 					buffer = await getBuffer(`https://imgur.com/gallery/xuTCBPO`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: '️*canal do Grabiie:*\n\n http://youtube.com/c/Grabiie'})
 					break
-				case 'nsfwloli1':
-					memein = await kagApi.memeindo()
-					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJhzKetbU3pzhoZdaIo6qBklCzwvmCCOznbg&usqp=CAU`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Rum️'})
-					break
-				case 'reislin':
-					memein = await kagApi.memeindo()
-					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKlc2hMIJ4PjW5tIXltrKe6xeBoKPLKTZMnQ&usqp=CAU`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: '🤭'})
-					break
 				case 'termux':
 					meme = await kagApi.memes()
-					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgADDq_64EbTI0NroP7CUoVeWmu1J06NnGHw&usqp=CAU`)
+					buffer = await getBuffer(`https://i.imgur.com/feOhRDK.png`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Terminal é um programa muito conhecido no mundo das distribuições Linux. Ele é uma ferramenta que facilita muito nas tarefas relacionadas ao sistema. Agora, já pensou em utilizar o Terminal Linux no seu Android? Esta é a proposta do Termux.\n\n*TERMUX: UTILIZE O TERMINAL NO SEU ANDROID*\n\nA utilização do Terminal aumenta muito a produtividade do usuário que já possui um determinado nível de conhecimento técnico.\nCom o terminal, é possível fazer diversas e diferentes coisas, desde navegar entre os diretórios e instalar programas, até descompactar arquivos e monitorar os processos.'})
 					break
 		    	case 'grupoinfo':
@@ -3404,17 +3385,8 @@ case 'narutologo':
                     if (!isGroup) return reply(mess.only.group)
                     ppUrl = await client.getProfilePicture(from) // leave empty to get your own
 			        buffer = await getBuffer(ppUrl)
-		            client.sendMessage(from, buffer, image, {quoted: mek, caption: `*NOME* : ${groupName}\n*MEMBRO* : ${groupMembers.length}\n*ADMIN* : ${groupAdmins.length}\n*DESCRIÇÃO* : ${groupDesc}`})
+		            client.sendMessage(from, buffer, image, {quoted: mek, caption: `*NOME*: ${groupName}\n*MEMBRO*: ${groupMembers.length}\n*ADMIN*: ${groupAdmins.length}\n*DESCRIÇÃO*: ${groupDesc}`})
                     break
-				case 'meme':
-					reply(mess.wait)
-					anu = await fetchJson(`https://api.fdci.se/rep.php?gambar=MEME BRASIL`, {method: 'get'})
-					ri = JSON.parse(JSON.stringify(anu));
-					ze =  ri[Math.floor(Math.random() * ri.length)];
-					nye = await getBuffer(ze)
-					client.sendMessage(from, nye, image, { caption: 'cringe️', quoted: mek })
-					await limitAdd(sender) 	
-					break
 				case 'memeindo':
 					memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://imgur.com/${memein.hash}.jpg`)
@@ -3424,16 +3396,8 @@ case 'narutologo':
 					if (args.length < 1) return
 					if (!isOwner) return reply(mess.only.ownerB)
 					prefix = args[0]
-					reply(`O prefixo foi alterado com sucesso para : ${prefix}`)
+					reply(`O prefixo foi alterado com sucesso para: ${prefix}`)
 					break
-                case 'lolih':
-                    gatauda = body.slice(6)
-                    reply(mess.wait)
-                    anu = await fetchJson(`https://tobz-api.herokuapp.com/api/randomloli?apikey=KVEFVXtj4099OZ4CCWIC`, {method: 'get'})
-                    buffer = await getBuffer(anu.result)
-                    client.sendMessage(from, buffer, image, {quoted: mek})
-                    await limitAdd(sender)
-                    break
 				case 'pronomeneu':
 					if (args.length < 1) return reply('Onde está o texto, hum?')
 					anu = await fetchJson(`https://mhankbarbars.herokuapp.com/api/hilih?teks=${body.slice(7)}`, {method: 'get'})
@@ -3444,33 +3408,11 @@ case 'narutologo':
 					if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply(mess.error.Iv)
 					anu = await fetchJson(`https://mhankbarbars.herokuapp.com/api/yta?url=${args[0]}&apiKey=${apiKey}`, {method: 'get'})
 					if (anu.error) return reply(anu.error)
-					teks = `*Title* : ${anu.title}\n*Filesize* : ${anu.filesize}`
+					teks = `*Title*: ${anu.title}\n*Filesize*: ${anu.filesize}`
 					thumb = await getBuffer(anu.thumb)
 					client.sendMessage(from, thumb, image, {quoted: mek, caption: teks})
 					buffer = await getBuffer(anu.result)
 					client.sendMessage(from, buffer, audio, {mimetype: 'audio/mp4', filename: `${anu.title}.mp3`, quoted: mek})
-					break
-				case 'tiktok':
-					if (args.length < 1) return reply('𝙲𝚊𝚍𝚎 𝚘 𝚕𝚒𝚗𝚔 𝚟𝚎𝚢?')
-					if (!isUrl(args[0]) && !args[0].includes('tiktok.com')) return reply(mess.error.Iv)
-					reply(mess.wait)
-					anu = await fetchJson(`https://mhankbarbars.herokuapp.com/api/tiktok?url=${args[0]}&apiKey=${apiKey}`, {method: 'get'})
-					if (anu.error) return reply(anu.error)
-					buffer = await getBuffer(anu.result)
-					client.sendMessage(from, buffer, video, {quoted: mek})
-					break
-				case 'tiktokstalk':
-					try {
-						if (args.length < 1) return client.sendMessage(from, '𝙲𝚊𝚍𝚎 𝚘 𝚗𝚘𝚖𝚎 𝚍𝚎𝚕𝚎 𝚟𝚎𝚢?', text, {quoted: mek})
-						let { user, stats } = await tiktod.getUserProfileInfo(args[0])
-						reply(mess.wait)
-						teks = `*ID* : ${user.id}\n*Username* : ${user.uniqueId}\n*Nickname* : ${user.nickname}\n*Followers* : ${stats.followerCount}\n*Followings* : ${stats.followingCount}\n*Posts* : ${stats.videoCount}\n*Luv* : ${stats.heart}\n`
-						buffer = await getBuffer(user.avatarLarger)
-						client.sendMessage(from, buffer, image, {quoted: mek, caption: teks})
-					} catch (e) {
-						console.log(`Error :`, color(e,'red'))
-						reply('Possível nome de usuário inválido')
-					}
 					break
 				case 'nulis':
 				case 'tulis':
@@ -3485,33 +3427,6 @@ case 'narutologo':
 					client.sendMessage(from, nulis, image, {quoted: mek})
 					await limitAdd(sender) 
 					break  
-				case 'url2img':
-					tipelist = ['desktop','tablet','mobile']
-					if (args.length < 1) return reply('Que tipo é??')
-					if (!tipelist.includes(args[0])) return reply('Tipe desktop|tablet|mobile')
-					if (args.length < 2) return reply('Cadê o url, hum?')
-					if (!isUrl(args[1])) return reply(mess.error.Iv)
-					reply(mess.wait)
-					anu = await fetchJson(`https://mhankbarbars.herokuapp.com/api/url2image?tipe=${args[0]}&url=${args[1]}&apiKey=${apiKey}`, {method: 'get'})
-					if (anu.error) return reply(anu.error)
-					buff = await getBuffer(anu.result)
-					client.sendMessage(from, buff, image, {quoted: mek})
-					break
-				case 'tstiker':
-				case 'tsticker':
-					if (args.length < 1) return reply('Onde está o texto, hum?')
-					ranp = getRandom('.png')
-					rano = getRandom('.webp')
-					teks = body.slice(9).trim()
-					anu = await fetchJson(`https://mhankbarbars.herokuapp.com/api/text2image?text=${teks}&apiKey=${apiKey}`, {method: 'get'})
-					if (anu.error) return reply(anu.error)
-					exec(`wget ${anu.result} -O ${ranp} && ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=20 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
-						fs.unlinkSync(ranp)
-						if (err) return reply(mess.error.stick)
-						client.sendMessage(from, fs.readFileSync(rano), sticker, {quoted: mek})
-						fs.unlinkSync(rano)
-					})
-					break
 				case 'tagall':
 				case 'marcar':
 				client.updatePresence(from, Presence.composing) 
@@ -3609,6 +3524,24 @@ case 'narutologo':
 							sendMess(_.jid, `*「 TRANSMISSÃO 」*\n\n${body.slice(4)}`)
 						}
 						reply('Transmissão concluída')
+					}
+					break
+				case 'bcgc':
+					client.updatePresence(from, Presence.composing) 
+					if (!isOwner) return reply(mess.only.ownerB)
+					if (args.length < 1) return reply('.......')
+					if (isMedia && !mek.message.videoMessage || isQuotedImage) {
+						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
+						buff = await client.downloadMediaMessage(encmedia)
+						for (let _ of groupMembers) {
+							client.sendMessage(_.jid, buff, image, {caption: `*「 TRANSMISSÃO GRUPOS 」*\n*Grupo*: ${groupName}\n\n${body.slice(6)}`})
+						}
+						reply('')
+					} else {
+						for (let _ of groupMembers) {
+							sendMess(_.jid, `*「 TRANSMISSÃO GRUPOS 」*\n*Grupo*: ${groupName}\n\n${body.slice(6)}`)
+						}
+						reply('Transmissão de grupos concluida')
 					}
 					break
         case 'promover':
