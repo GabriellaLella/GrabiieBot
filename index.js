@@ -704,7 +704,7 @@ if (text.includes("placa"))
 			
 		if (messagesC.includes("Blz")){
 			client.updatePresence(from, Presence.composing)
-			reply("Aham")
+			reply("Blz, e tu?")
 	}
 	
 		if (messagesC.includes("Lixo")){
@@ -747,12 +747,6 @@ if (text.includes("placa"))
 			if (messagesC.includes("onich")){
 			client.updatePresence(from, Presence.composing)
 			tujuh = fs.readFileSync('./assets/onich.mp3');
-            client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-	}
-
-			if (messagesC.includes("bot")){
-			client.updatePresence(from, Presence.composing)
-			tujuh = fs.readFileSync('./assets/xandao.m4a');
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
             if (messagesC.includes("grabiie")){
