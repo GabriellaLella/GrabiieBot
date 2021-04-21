@@ -755,7 +755,7 @@ if (text.includes("placa"))
 				if (messagesC.includes("kudasai")){
 			client.updatePresence(from, Presence.composing)
 			tujuh = fs.readFileSync('./assets/ya.mp3');
-            client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+            client.sendMessage(from, tujuh, audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
 
 				if (messagesC.includes("mandememe")){
@@ -1721,7 +1721,7 @@ if (text.includes("placa"))
 					client.sendMessage(from, `perintah Diterima, membuka blokir ${body.slice(9)}@c.us`, text)
 				    break
                 case 'image':
-					if (args.length < 1) return reply('O que você quer procurar, mana?')
+					if (args.length < 1) return reply('O que você quer procurar?')
 					goo = body.slice(7)
 					anu = await fetchJson(`https://api.vhtear.com/googleimg?query=${goo}&apikey=ANTIGRATISNIHANJENKKK`, {method: 'get'})
 					reply(mess.wait)
@@ -1734,13 +1734,6 @@ if (text.includes("placa"))
 					if (!isOwner) return reply(mess.only.ownerB)
 					client.banUser (`${body.slice(7)}@c.us`, "add")
 					client.sendMessage(from, `você foi banido ${body.slice(7)}@c.us`, text)
-					break
-				case 'playstore':
-					kuji = body.slice(7)
-					reply(mess.wait)
-					anu = await getBuffer(`https://api.vhtear.com/playstore?query={kuji}&apikey=Aris komtol`, {method: 'get'})
-					capty = `*➸ title :* ${anu.title}\n*➸ app_id :* ${anu.app_id}\n*➸ description :* ${anu.description}\n*➸ developer_id :* ${anu.developer_id}\n*➸ developer :* ${anu.developer}\n*➸ score :* ${anu.score}\n*➸ full_price :* ${anu.full_price}\n*➸ price :* ${anu.price}\n*➸ free :* ${anu.free}`
-					client.sendMessage(from, anu, image, {quoted: mek, caption: capty})
 					break
 				case 'otagall2':
 					if (!isGroup) return reply(mess.only.group)
