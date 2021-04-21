@@ -9,10 +9,8 @@ const { color, bgcolor } = require('./lib/color')
 const { help } = require('./src/help')
 const { modapk } = require('./src/modapk')
 const { pack } = require('./src/pack')
-const { outros } = require('./src/outros')
 const { vipmenu } = require('./src/vipmenu')
 const { destrava } = require('./src/destrava')
-const { menu2 } = require('./src/menu2')
 const { alist } = require('./src/alist')
 const { destrava2 } = require('./src/destrava')
 const { gbin } = require('./src/gbin')
@@ -1462,12 +1460,6 @@ if (text.includes("placa"))
 					case 'vipmenu':
 					if (!isPremium) return reply('Você não é um Membro Premium, entre em contato com o proprietário ou digite *#daftarvip* para comprar acesso Premium!' ,text, { quoted: mek })
 					client.sendMessage(from, vipmenu(prefix) , text, { quoted: mek })
-					break
-					case 'outros':
-					client.sendMessage(from, outros(prefix) , text, { quoted: mek })
-					break
-					case 'menu2':
-					client.sendMessage(from, menu2(prefix) , text, { quoted: mek })
 					break
 				case 'textsky':
 					if (args.length < 1) return reply(mess.blank)
