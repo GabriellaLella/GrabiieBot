@@ -39,8 +39,6 @@ Seja bem-vindo
   ├─ 📌 .darkjokes (memes aleatórios)
   ├─ 📌 .memeindo
   ├─ 📌 .tts
-  ├─ 📌 .lolih [on]
-  ├─ 📌 .url2img
   ├─ 📌 .leens [na legenda]
   ├─ 📌 .wait [na legenda]
   ├─ 📌 .setprefix
@@ -52,7 +50,6 @@ Seja bem-vindo
   ├─ 📌 .promover [@]
   ├─ 📌 .rebaixar
   ├─ 📌 .admins
-  ├─ 📌 .marcar2
   ├─ 📌 .bc [texto]
   ├─ 📌 .marcar3
   ├─ 📌 .bloqueados
@@ -71,9 +68,9 @@ Seja bem-vindo
   ├─ 📌 .marcar
   ├─ 📌 .marcar2
   ├─ 📌 .marcar3
-  ├─ 📌 .loli
   ├─ 📌 .dono
   ├─ 📌 .porno
+  ├─ 📌 .loli
   ├─ 📌 .mia [aleatórias]
   ├─ 📌 .rize [aleatórias]
   ├─ 📌 .minato [aleatórias]
@@ -82,9 +79,7 @@ Seja bem-vindo
   ├─ 📌 .sasuke [aleatórias]
   ├─ 📌 .sakura [aleatórias]
   ├─ 📌 .naruto [aleatórias]
-  ├─ 📌 .meme
   ├─ 📌 .canal
-  ├─ 📌 .reislin
   ├─ 📌 .simih 1 (para ativar)
   ├─ 📌 .simih 0 (para desativar)
   ├─ 📌 .simi (sua mensagem)
@@ -144,7 +139,7 @@ Seja bem-vindo
   ├─ 📌 .moddroid [jogo/app]
   ├─ 📌 .videos [titulo]
   ├─ 📌 .nomegp
-  ├─ 📌 .darkjokes (memes aleatórios)
+  ├─ 📌 .darkjokes | memes aleatórios
   ├─ 📌 .animecry
   ├─ 📌 .next
   ├─ 📌 .alerta
