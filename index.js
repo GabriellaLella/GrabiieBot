@@ -696,11 +696,6 @@ if (text.includes("placa"))
 			client.updatePresence(from, Presence.composing)
 			reply("Teu pai")
 	}
-	
-		if (messagesC.includes("corno")){
-			client.updatePresence(from, Presence.composing)
-			reply("Vsfd seu merda")
-	}
 			
 		if (messagesC.includes("Blz")){
 			client.updatePresence(from, Presence.composing)
@@ -710,16 +705,6 @@ if (text.includes("placa"))
 		if (messagesC.includes("Lixo")){
 			client.updatePresence(from, Presence.composing)
 			reply("Teu pai")
-	}
-	
-		if (messagesC.includes("Bomdia")){
-			client.updatePresence(from, Presence.composing)
-			reply("☀️")
-	}
-	
-		if (messagesC.includes("krai")){
-			client.updatePresence(from, Presence.composing)
-			reply("hehehe")
 	}
 						
 		if (messagesC.includes("merda")){
@@ -747,6 +732,12 @@ if (text.includes("placa"))
 			if (messagesC.includes("onich")){
 			client.updatePresence(from, Presence.composing)
 			tujuh = fs.readFileSync('./assets/onich.mp3');
+            client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+	}
+	
+			if (messagesC.includes("loli")){
+			client.updatePresence(from, Presence.composing)
+			tujuh = fs.readFileSync('./assets/YAMEII BABY MY PHONE.mp3');
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
             if (messagesC.includes("grabiie")){
@@ -3344,8 +3335,8 @@ case 'narutologo':
 					break
 				case 'loli':
 					memein = await kagApi.memeindo()
-					buffer = await getBuffer(`https://i.imgur.com/iphQUGi.jpg`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'hmm, então quer ver loli?'})
+					buffer = await getBuffer(`https://i.imgur.com/LZzn60Q.png`)
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Pare de ver lolis escute: YAMEII - BABY MY PHONE'})
 					break
 				case 'casal':
 					if (!isGroup) return reply(mess.only.group)
@@ -3363,7 +3354,7 @@ case 'narutologo':
 					break
 				case 'canal':
 					memein = await kagApi.memeindo()
-					buffer = await getBuffer(`https://imgur.com/gallery/xuTCBPO`)
+					buffer = await getBuffer(`https://i.imgur.com/TDfiKB9.png`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: '️*canal do Grabiie:*\n\n http://youtube.com/c/Grabiie'})
 					break
 				case 'termux':
