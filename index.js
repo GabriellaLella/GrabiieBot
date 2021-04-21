@@ -2703,17 +2703,17 @@ break
                 play = body.slice(5)
                 anu = await fetchJson(`http://api-gdr.herokuapp.com/api/ytplaymp3?q=${play}`)
                if (anu.error) return reply(anu.error)
-                 infomp3 = `*MUSICA ENCONTRADA!!!*\nTítulo: ${anu.result.title}\nUrl: ${anu.result.fonte}\nTamanho : ${anu.result.size}\n\n*ESPERE UM POUQUINHO, N SPAME O CHAT*`
-                buffer = await getBuffer(anu.result.thumb)
-                lagu = await getBuffer(anu.result.url_audio)
+                 infomp3 = `*MUSICA ENCONTRADA!!!*\nTítulo: ${anu.title}\nUrl: ${anu.fonte}\nTamanho : ${anu.size}\n\n*ESPERE UM POUQUINHO, N SPAME O CHAT*`
+                buffer = await getBuffer(anu.thumb)
+                lagu = await getBuffer(anu.url_audio)
                 client.sendMessage(from, buffer, image, {quoted: mek, caption: infomp3})
                 client.sendMessage(from, lagu, audio, {mimetype: 'audio/mp4', filename: `${anu.title}.mp3`, quoted: mek})
                 await limitAdd(sender)
                 break
 				case 'setnome':
-                   if (!isGroup) return reply(mess.only.group)
-			       if (!isGroupAdmins) return reply(mess.only.admin)
-			   	   if (!isBotGroupAdmins) return reply(mess.only.Badmin)
+                     if (!isGroup) return reply(mess.only.group)
+	             if (!isGroupAdmins) return reply(mess.only.admin)
+		     if (!isBotGroupAdmins) return reply(mess.only.Badmin)
                    client.groupUpdateSubject(from, `${body.slice(9)}`)
                    client.sendMessage(from, 'Sucesso, alterou o nome do grupo', text, {quoted: mek})
                    break
