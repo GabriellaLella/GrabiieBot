@@ -47,7 +47,7 @@ pkg install git && pkg install wget && pkg install ffmpeg && pkg install nodejs-
 
 git clone https://github.com/Grabiie/GrabiieBot
 
-cd Grabiie
+cd GrabiieBot
 
 bash install.sh
 ```
