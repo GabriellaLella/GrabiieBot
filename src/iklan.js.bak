@@ -4,15 +4,14 @@ const iklan = () => {
 ║
 ╠═══════════════════════════
 ╠➥ *LISTA DE ALUGUEL E CRIAR BOTS:*
-╠➥ *ALUGUEL: 10 / GRUPO (MÊS)*
-╠➥ *CRIAR: 35 (PODE SER PROPRIETÁRIO)*
+╠➥ *ALUGUEL: GRÁTIS A ADIÇÃO A GRUPOS.*
+╠➥ *CRIAR: CRIAÇÃO DE UM BOT QUE VOCÊ TENHA DONO R$15,00*
 ╠➥ *PODE PAGAR ATRAVÉS DE:*
-╠➥ *MERCADO PAGO, BOLETO,*
+╠➥ *MERCADO PAGO, BOLETO, PIX, PicPay e PayPal*
 ╠═══════════════════════════
-╠➥ *VANTAGENS*
-╠➥ *wa.me/21997123716*
+╠➥ *wa.me/553599191111*
 ║
-╚═〘  DARK BOT 〙
+╚═〘 Grabiie Bot 〙
 `
 }
 exports.iklan = iklan
