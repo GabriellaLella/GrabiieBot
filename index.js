@@ -898,7 +898,6 @@ if (text.includes("placa"))
 					reply(anu.result.hasil)
 					break
                    case 'modapk':
-                    if (!isPremium) return reply(mess.only.premium)
                     client.sendMessage(from, modapk(prefix), text, { quoted: mek })
                     break
                    case 'gbin':
@@ -1932,23 +1931,14 @@ break
 				break
                                 case 'afk':
                                         tels = body.slice(4)
-                                        if (args.length < 1) return reply('irmão afk por causa do que?')                                  
+                                        if (args.length < 1) return reply('Descreva o motivo da ausencia na frente do comando.')                                  
                                         var nom = mek.participant
                                         const tag = {
                                                 text: `@${nom.split("@s.whatsapp.net")[0]} *MÉDIO AFK ${tels} NÃO PERTURBE SIM*`,
                                                 contextInfo: { mentionedJid: [nom] }
                                         }
                                         client.sendMessage(from, tag, text, {quoted: mek})
-                                        break 
-				case 'indo10':
-					if (!isPremium) return reply('Você não é um Membro Premium, entre em contato com o proprietário ou digite *.daftarvip* para comprar acesso Premium!' ,text, { quoted: mek })
-					qute9 = await getBuffer(`https://i.ibb.co/z6w14Gq/32d64d819e21.png`)
-					client.sendMessage(from, qute9, image, { quoted: mek, caption: 'Aqui está o Bro Baixe o seu próprio link\n\nhttps://www.mediafire.com/file/snwja297dv4zvtl/VID-20210107-WA0036.mp4/file' })
-					break
-case 'iri':
-const irimp3 = fs.readFileSync('./assets/iri.mp3');
-client.sendMessage(from, irimp3, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-break
+                                        break
 				case 'bucin':
 					anu = await fetchJson(`https://arugaz.herokuapp.com/api/howbucins`, {method: 'get'})
 					reply('Não fique entediado:\n\n'+anu.desc)
@@ -3472,7 +3462,7 @@ case 'narutologo':
 					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('A marca-alvo que você quer chutar!')
 					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 					if (mentioned.length > 1) {
-						teks = 'Esse ai ja foi kkkk :\n'
+						teks = 'Banido:\n'
 						for (let _ of mentioned) {
 							teks += `@${_.split('@')[0]}\n`
 						}
@@ -3523,7 +3513,7 @@ case 'narutologo':
 					})
 					break
 				case 'simi':
-					if (args.length < 1) return reply('Onde está o texto, hum?')
+					if (args.length < 1) return reply('Escreva algo na frente do comando')
 					teks = body.slice(5)
 					anu = await simih(teks) //fetchJson(`https://mhankbarbars.herokuapp.com/api/samisami?text=${teks}`, {method: 'get'})
 					//if (anu.error) return reply('Simi ga tau kak')
@@ -3532,7 +3522,7 @@ case 'narutologo':
 				case 'simih':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
-					if (args.length < 1) return reply('Hmmmm')
+					if (args.length < 1) return reply('Onde está o texto?')
 					if (Number(args[0]) === 1) {
 						if (isSimi) return reply('O modo Simi está ativo')
 						samih.push(from)
@@ -3543,7 +3533,7 @@ case 'narutologo':
 						fs.writeFileSync('./src/simi.json', JSON.stringify(samih))
 						reply('Desativado modo simi com sucesso neste grupo 😡️')
 					} else {
-						reply('1 para ativar, 0 para desativar, lerdao vc em KKKKK')
+						reply('1 para ativar, 0 para desativar')
 					}
 					break
 				case 'bemvindo':
@@ -3560,7 +3550,7 @@ case 'narutologo':
 						fs.writeFileSync('./src/welkom.json', JSON.stringify(welkom))
 						reply('Desativou com sucesso o recurso de boas-vindas neste grupo 😡️')
 					} else {
-						reply('1 para ativar, 0 para desativar, lerdão vc em KAKKKK')
+						reply('1 para ativar, 0 para desativar')
 					}
                                       break
 				case 'clonar':
