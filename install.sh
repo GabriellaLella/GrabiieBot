@@ -11,4 +11,4 @@ wget -O ~/../usr/share/tessdata/ind.traineddata "https://github.com/tesseract-oc
 npm install
 npm i -g pm2
 
-echo "[*] Obrigado por utilizar o bot \"GrabiieBot\" Grabiie agradece"
+echo "[*] Obrigado por utilizar o GrabiieBot"
