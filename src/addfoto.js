@@ -3,9 +3,6 @@ const addfoto = () => {
 	
 	*ADICIONAR BASE DE DADOS FOTO*
 	
-	FOTOS COM SUCESSO SALVADAS NOS DADOS!
-	
-
-obrigado !`
+	FOTOS COM SUCESSO SALVADAS NOS DADOS!`
 }
 exports.addfoto = addfoto
