@@ -5,22 +5,28 @@ const modapk = () => {
 ATENÇÃO EU NÃO APOIO ESSE TIPO DE CONTEÚDO, SE VOCÊ TIVER CONDIÇÕES COMPRE PARA APOIAR O DESENVOLVEDOR.
 
 • Minecraft 1.16.220.02
-https://www.mediafire.com/download/qvv7v2rp36c09x2
+https://www.mediafire.com/file/qvv7v2rp36c09x2
 
 • Geometry Dash (MOD)
 http://www.mediafire.com/file/thnoi1wpa5ex2wn
 
-• Alight Motion (PRO)
-https://www.mediafire.com/download/tpxj2grwf8imp6i
+• YouTube Vanced (Ao utilizar esse app você retira os anuncios do YouTube mais o YouTuber não recebe o AdSense/dinheiro)
+https://vancedapp.com/
 
-• Avee Player (PRO)
-https://www.mediafire.com/download/5vkde8d1gcyk33y
+• Kinemaster (PRO)
+http://www.mediafire.com/file/ixi20u38sbdncnr
 
 • Inshot (PRO)
-https://www.mediafire.com/download/h7yrlcofz5tk4nl
+https://www.mediafire.com/file/h7yrlcofz5tk4nl
+
+• Alight Motion (PRO)
+https://www.mediafire.com/file/tpxj2grwf8imp6i
+
+• Avee Player (PRO)
+https://www.mediafire.com/file/5vkde8d1gcyk33y
 
 • WavePad (PRO)
-https://www.mediafire.com/download/oif50qb8ltdoe2x
+https://www.mediafire.com/file/oif50qb8ltdoe2x
 
 Alguma sugestão, link off ou desatualizado mande no meu WhatsApp
 Wa.me/5535999191111
