@@ -80,38 +80,38 @@ Seja bem-vindo
   ├─ 📌 ${prefix}modapk
   ├─ 📌 ${prefix}daftarvip
   ├─ 📌 ${prefix}qrcode
-  ├─ 📌 .pack
-  ├─ 📌 .destrava
-  ├─ 📌 .banir
-  ├─ 📌 .leveling [on/off]
-  ├─ 📌 .level
-  ├─ 📌 .add
-  ├─ 📌 .promover
-  ├─ 📌 .setfoto
-  ├─ 📌 .setname
-  ├─ 📌 .rebaixar
-  ├─ 📌 .admins
-  ├─ 📌 .marcar ou .tagall
-  ├─ 📌 .marcar1 ou .tagall1
-  ├─ 📌 .marcar2 ou .tagall2
-  ├─ 📌 .marcar3 ou .tagall3
-  ├─ 📌 .marcar4 ou .tagall4
-  ├─ 📌 .bemvindo [1/0]
-  ├─ 📌 .grupoinfo
-  ├─ 📌 .setdesc
-  ├─ 📌 .bug [sua mensagem]
-  ├─ 📌 .clonar [@]
-  ├─ 📌 .dono
-  ├─ 📌 .ping
-  ├─ 📌 .gay [@]
-  ├─ 📌 .wame
-  ├─ 📌 .map (nome)
-  ├─ 📌 .setppbot (marque uma img)
-  ├─ 📌 .pinterest (nome)
-  ├─ 📌 .desligar (so para o dono)
-  ├─ 📌 .timer
-  ├─ 📌 .ttp [texto]
-  ├─ 📌 .testime
+  ├─ 📌 ${prefix}destrava
+  ├─ 📌 ${prefix}banir
+  ├─ 📌 ${prefix}leveling 1 ativa e 0 desativa
+  ├─ 📌 ${prefix}level
+  ├─ 📌 ${prefix}add
+  ├─ 📌 ${prefix}promover
+  ├─ 📌 ${prefix}setfoto
+  ├─ 📌 ${prefix}setnome
+  ├─ 📌 ${prefix}rebaixar
+  ├─ 📌 ${prefix}admins
+  ├─ 📌 ${prefix}marcar ou ${prefix}tagall
+  ├─ 📌 ${prefix}marcar1 ou ${prefix}tagall1
+  ├─ 📌 ${prefix}marcar2 ou ${prefix}tagall2
+  ├─ 📌 ${prefix}marcar3 ou ${prefix}tagall3
+  ├─ 📌 ${prefix}marcar4 ou ${prefix}tagall4
+  ├─ 📌 ${prefix}bemvindo 1 ativa e 0 desativa
+  ├─ 📌 ${prefix}grupoinfo
+  ├─ 📌 ${prefix}setdesc
+  ├─ 📌 ${prefix}bug ou ${prefix}issues
+  ├─ 📌 ${prefix}clonar @
+  ├─ 📌 ${prefix}dono
+  ├─ 📌 ${prefix}ping
+  ├─ 📌 ${prefix}gayi e uma foto
+  ├─ 📌 ${prefix}wame ou ${prefix}wa.me
+  ├─ 📌 ${prefix}map nome ou coordernada
+  ├─ 📌 ${prefix}setppbot (marque uma img)
+  ├─ 📌 ${prefix}pinterest (nome)
+  ├─ 📌 ${prefix}desligar (so para o dono)
+  ├─ 📌 ${prefix}timer
+  ├─ 📌 ${prefix}ttp [texto]
+  ├─ 📌 ${prefix}10s
+  ├─ 📌 ${prefix}30s
   ├─ 📌 .tomp3
   ├─ 📌 .modoanime [on/off]
   ├─ 📌 .modonsfw [on/off]
