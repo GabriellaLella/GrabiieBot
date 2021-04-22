@@ -2696,6 +2696,7 @@ break
                 play = body.slice(5)
                 anu = await fetchJson(`http://api-gdr.herokuapp.com/api/ytplaymp3?q=${play}`)
                if (anu.error) return reply(anu.error)
+	       if (args.length < 1) return client.sendMessage(from, 'Nome da música na frente do comando!', text, {quoted: mek})
                  infomp3 = `*MUSICA ENCONTRADA!!!*\nTítulo: ${anu.title}\nUrl: ${anu.fonte}\nTamanho : ${anu.size}\n\n*ESPERE UM POUQUINHO, N SPAME O CHAT*`
                 buffer = await getBuffer(anu.thumb)
                 lagu = await getBuffer(anu.url_audio)
