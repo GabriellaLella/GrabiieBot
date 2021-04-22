@@ -755,7 +755,7 @@ if (text.includes("placa"))
 				if (messagesC.includes("kudasai")){
 			client.updatePresence(from, Presence.composing)
 			tujuh = fs.readFileSync('./assets/ya.mp3');
-            client.sendMessage(from, tujuh, audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+            client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
 
 				if (messagesC.includes("mandememe")){
