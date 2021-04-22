@@ -22,76 +22,62 @@ Seja bem-vindo
 
 🧐 *SOBRE*
   │
-  ├─ 📌 .ping
-  └─ 📌 .dono
+  ├─ 📌 ${prefix}ping
+  └─ 📌 ${prefix}dono
 🧐 *Figurinhas*
   │
   │Todos 3 comandos funcionam para
   │foto/video/gif
   │
-  ├─ 📌 .figu
-  ├─ 📌 .fig
-  └─ 📌 .f
+  ├─ 📌 ${prefix}figu
+  ├─ 📌 ${prefix}fig
+  └─ 📌 ${prefix}f
 
 *ATENÇÃO HELP SENDO FEITO*
   │
-  ├─ 📌 .toimg
-  ├─ 📌 .darkjokes (memes aleatórios)
-  ├─ 📌 .memeindo
-  ├─ 📌 .tts
-  ├─ 📌 .leens [na legenda]
-  ├─ 📌 .wait [na legenda]
-  ├─ 📌 .setprefix
-  ├─ 📌 .linkgp
-  ├─ 📌 .simih [1/0]
-  ├─ 📌 .marcar
-  ├─ 📌 .add [@]
-  ├─ 📌 .banir [@]
-  ├─ 📌 .promover [@]
-  ├─ 📌 .rebaixar
-  ├─ 📌 .admins
-  ├─ 📌 .bc [texto]
-  ├─ 📌 .marcar3
-  ├─ 📌 .bloqueados
-  ├─ 📌 .bloquear [@]
-  ├─ 📌 .desbloquear [@]
-  ├─ 📌 .limpar
-  ├─ 📌 .bemvindo [1/0]
-  ├─ 📌 .clonar
-  ├─ 📌 .owner ou .dono
-  ├─ 📌 .tts
-  ├─ 📌 .setnome
-  ├─ 📌 .termux
-  ├─ 📌 .setfoto
-  ├─ 📌 .grupoinfo
-  ├─ 📌 .ytmp4
-  ├─ 📌 .marcar
-  ├─ 📌 .marcar2
-  ├─ 📌 .marcar3
-  ├─ 📌 .dono
-  ├─ 📌 .porno
-  ├─ 📌 .loli
-  ├─ 📌 .mia [aleatórias]
-  ├─ 📌 .rize [aleatórias]
-  ├─ 📌 .minato [aleatórias]
-  ├─ 📌 .boruto [aleatórias]
-  ├─ 📌 .hinata [aleatórias]
-  ├─ 📌 .sasuke [aleatórias]
-  ├─ 📌 .sakura [aleatórias]
-  ├─ 📌 .naruto [aleatórias]
-  ├─ 📌 .canal
-  ├─ 📌 .simih 1 (para ativar)
-  ├─ 📌 .simih 0 (para desativar)
-  ├─ 📌 .simi (sua mensagem)
-  ├─ 📌 .gado
-  ├─ 📌 .dbz
-  ├─ 📌 .hidegp
-  ├─ 📌 .dado
-  ├─ 📌 .cekvip
-  ├─ 📌 .premiumlist
-  ├─ 📌 .delete
-  ├─ 📌 .modapk
-  ├─ 📌 .indo10
+  ├─ 📌 ${prefix}toimg
+  ├─ 📌 ${prefix}darkjokes (memes aleatórios)
+  ├─ 📌 ${prefix}memeindo
+  ├─ 📌 ${prefix}tts
+  ├─ 📌 ${prefix}leens [na legenda]
+  ├─ 📌 ${prefix}wait [na legenda]
+  ├─ 📌 ${prefix}setprefix
+  ├─ 📌 ${prefix}linkgp
+  ├─ 📌 ${prefix}simih [1/0]
+  ├─ 📌 ${prefix}marcar
+  ├─ 📌 ${prefix}add [@]
+  ├─ 📌 ${prefix}banir [@]
+  ├─ 📌 ${prefix}promover [@]
+  ├─ 📌 ${prefix}rebaixar
+  ├─ 📌 ${prefix}admins
+  ├─ 📌 ${prefix}bc [texto]
+  ├─ 📌 ${prefix}bloqueados
+  ├─ 📌 ${prefix}bloquear [@]
+  ├─ 📌 ${prefix}desbloquear [@]
+  ├─ 📌 ${prefix}limpar
+  ├─ 📌 ${prefix}bemvindo [1/0]
+  ├─ 📌 ${prefix}clonar
+  ├─ 📌 ${prefix}owner ou .dono
+  ├─ 📌 ${prefix}tts
+  ├─ 📌 ${prefix}setnome
+  ├─ 📌 ${prefix}termux
+  ├─ 📌 ${prefix}setfoto
+  ├─ 📌 ${prefix}grupoinfo
+  ├─ 📌 ${prefix}ytmp4
+  ├─ 📌 ${prefix}marcar
+  ├─ 📌 ${prefix}marcar2
+  ├─ 📌 ${prefix}marcar3
+  ├─ 📌 ${prefix}dono
+  ├─ 📌 ${prefix}porno
+  ├─ 📌 ${prefix}loli
+  ├─ 📌 ${prefix}canal
+  ├─ 📌 ${prefix}simih 1 ativa e 0 desativa
+  ├─ 📌 ${prefix}simi
+  ├─ 📌 ${prefix}dado
+  ├─ 📌 ${prefix}cekvip
+  ├─ 📌 ${prefix}premiumlist
+  ├─ 📌 ${prefix}delete
+  ├─ 📌 ${prefix}modapk
   ├─ 📌 .daftarvip [para virar Premium]
   ├─ 📌 .qrcode
   ├─ 📌 .chentai
