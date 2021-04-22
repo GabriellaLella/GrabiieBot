@@ -8,11 +8,11 @@ const {
 const { color, bgcolor } = require('./lib/color')
 const { help } = require('./src/help')
 const { modapk } = require('./src/modapk')
-const { pack } = require('./src/pack')
 const { vipmenu } = require('./src/vipmenu')
 const { destrava } = require('./src/destrava')
-const { alist } = require('./src/alist')
 const { destrava2 } = require('./src/destrava')
+const { issues } = require('./src/issues')
+const { alist } = require('./src/alist')
 const { addsay } = require('./src/addsay')
 const { listsay } = require('./src/listsay')
 const { addfoto } = require('./src/addfoto')
@@ -899,9 +899,6 @@ if (text.includes("placa"))
                    case 'destrava':
                     client.sendMessage(from, destrava(prefix), text, { quoted: mek })
                     break
-                   case 'pack':
-                    client.sendMessage(from, pack(prefix), text, { quoted: mek })
-                    break
 				case 'ytmp4':
 					if (args.length < 1) return reply('Cadê o url vey?')
 					if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply(mess.error.Iv)
@@ -1517,9 +1514,8 @@ if (text.includes("placa"))
 					client.sendMessage(from, teks.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": premium}})
 					break
                   case 'qrcode':
-        			if (!isPremium) return reply('Você não é um Membro Premium, entre em contato com o proprietário ou digite *.Daftarvip* para adquirir o acesso Premium!' ,text, { quoted: mek })
 					const tex = encodeURIComponent(body.slice(8))
-					if (!tex) return client.sendMessage(from, 'Digite um texto/url que deseja criar um código qr', text, {quoted: mek})
+					if (!tex) return client.sendMessage(from, 'Digite um texto ou url que deseja criar um código qr', text, {quoted: mek})
 					const bufferr = await getBuffer(`https://api.qrserver.com/v1/create-qr-code/?size=500x500&data=${tex}`)
 					client.sendMessage(from, bufferr, image, {quoted: mek})
 					break
@@ -2612,16 +2608,10 @@ break
 					buffer = await getBuffer(anu.result)
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					break
-                case 'bug':
-					gh = body.slice(7)
-                    p1 = gh.split("/")[0];
-                    p2 = gh.split("/")[1];
-					if (args.length < 1) return reply('Cadê o texto, hum')
-					reply('espere')
-					anu = await fetchJson(`https://restapi-exe.herokuapp.com/api/glitch?text=${p1}&text2=${p2}`, {method: 'get'})
-					buffer = await getBuffer(anu.result)
-					client.sendMessage(from, buffer, image, {quoted: mek})
-					break
+		   case 'issues':
+                   case 'bug':
+                    client.sendMessage(from, issues(prefix), text, { quoted: mek })
+                    break
                 case 'pubg':
 					gh = body.slice(7)
                     p1 = gh.split("/")[0];
@@ -3420,8 +3410,8 @@ case 'narutologo':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
-					if (args.length < 1) return reply('Você quer adicionar um gênio?')
-					if (args[0].startsWith('08')) return reply('Use o código do país, man \n ex: +55 89981246187')
+					if (args.length < 1) return reply('Você deve adicionar o número na pessoa na frente do comando')
+					if (args[0].startsWith('08')) return reply('Use o código do país,\n Ex: +55 35999191111')
 					try {
 						num = `${args[0].replace(/ /g, '')}@s.whatsapp.net`
 						client.groupAdd(from, [num])
