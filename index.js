@@ -1925,23 +1925,27 @@ break
 						reply('❌ *ERRO* ❌')
 					}
 					break
-				case 'testime':
+				case '10s':
 					setTimeout( () => {
-					client.sendMessage(from, 'O tempo acabou:v', text) // ur cods
+					client.sendMessage(from, 'O tempo acabou', text) // ur cods
 					}, 10000) // 1000 = 1s,
 					setTimeout( () => {
-					client.sendMessage(from, 'Mais 5 segundos', text) // ur cods
+					client.sendMessage(from, 'Falta 5 segundos', text) // ur cods
 					}, 5000) // 1000 = 1s,
 					setTimeout( () => {
-					client.sendMessage(from, '10 segundos para ir', text) // ur cods
+					client.sendMessage(from, '10 segundos para acabar o tempo', text) // ur cods
 					}, 0) // 1000 = 1s,
 					break
-		        case 'gay':		
-	            	if (args.length < 1) return reply('marque seus amigos!')
-					rate = body.slice(1)
-					const ti =['4','9','17','28','34','48','59','62','74','83','97','100','29','94','75','82','41','39']
-					const kl = ti[Math.floor(Math.random() * ti.length)]
-					client.sendMessage(from, 'Como você é gay: *'+rate+'*\n\nSua porcentagem gay : '+ kl+'%', text, { quoted: mek })
+				case '30s':
+					setTimeout( () => {
+					client.sendMessage(from, 'O tempo acabou', text) // ur cods
+					}, 30000) // 1000 = 1s,
+					setTimeout( () => {
+					client.sendMessage(from, 'Falta 15 segundos', text) // ur cods
+					}, 15000) // 1000 = 1s,
+					setTimeout( () => {
+					client.sendMessage(from, '30 segundos para acabar o tempo', text) // ur cods
+					}, 0) // 1000 = 1s,
 					break
                   case 'timer':
 				if (args[1]=="segundo") {var timer = args[0]+"000"
@@ -2678,7 +2682,7 @@ case 'narutologo':
 					anu = await fetchJson(`https://api.vhtear.com/harijadian?tgl=${gbl1}&bln=${gbl2}&thn=${gbl3}&apikey=ANTIGRATISNIHANJENKKK`)
 					reply(anu.result.hasil)
 					break
-                      case 'gay1': 
+                      case 'gayi': 
                                         var imgbb = require('imgbb-uploader')
                                          if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
                                          ger = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
