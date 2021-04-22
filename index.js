@@ -2691,7 +2691,7 @@ break
 						reply('❌ *ERROR* ❌')
 					}
 					break
-                 case 'play':
+                 case 'secreto':
                 reply(mess.wait)
                 play = body.slice(5)
                 anu = await fetchJson(`http://api-gdr.herokuapp.com/api/ytplaymp3?q=${play}`)
