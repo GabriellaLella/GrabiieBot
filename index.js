@@ -13,9 +13,6 @@ const { vipmenu } = require('./src/vipmenu')
 const { destrava } = require('./src/destrava')
 const { alist } = require('./src/alist')
 const { destrava2 } = require('./src/destrava')
-const { gbin } = require('./src/gbin')
-const { gpessoa } = require('./src/gpessoa')
-const { chentai } = require('./src/chentai')
 const { gcpf } = require('./src/gcpf')
 const { addsay } = require('./src/addsay')
 const { listsay } = require('./src/listsay')
@@ -900,29 +897,11 @@ if (text.includes("placa"))
                    case 'modapk':
                     client.sendMessage(from, modapk(prefix), text, { quoted: mek })
                     break
-                   case 'gbin':
-                    if (!isPremium) return reply(mess.only.premium)
-                    client.sendMessage(from, gbin(prefix), text, { quoted: mek })
-                    break
-                   case 'gpessoa':
-                    if (!isPremium) return reply(mess.only.premium)
-                    client.sendMessage(from, gpessoa(prefix), text, { quoted: mek })
-                    break
                    case 'destrava':
-                    if (!isPremium) return reply(mess.only.premium)
                     client.sendMessage(from, destrava(prefix), text, { quoted: mek })
                     break
                    case 'pack':
-                    if (!isPremium) return reply(mess.only.premium)
                     client.sendMessage(from, pack(prefix), text, { quoted: mek })
-                    break
-                   case 'chentai':
-                    if (!isPremium) return reply(mess.only.premium)
-                    client.sendMessage(from, chentai(prefix), text, { quoted: mek })
-                    break
-                   case 'gcpf':
-                    if (!isPremium) return reply(mess.only.premium)
-                    client.sendMessage(from, gcpf(prefix), text, { quoted: mek })
                     break
 				case 'ytmp4':
 					if (args.length < 1) return reply('Cadê o url vey?')
@@ -935,9 +914,6 @@ if (text.includes("placa"))
 					buffer = await getBuffer(anu.result)
 					client.sendMessage(from, buffer, video, {mimetype: 'video/mp4', filename: `${anu.title}.mp4`, quoted: mek})
 					break
-		case 'iri':
-			client.sendPtt(from, './lindy/iri.mp3', {quoted: mek, ptt:true})
-			break
 				case 'ytmp3':
 			    	if (!isPremium) return reply(mess.only.premium)
                    reply(mess.wait)
@@ -1934,7 +1910,7 @@ break
                                         if (args.length < 1) return reply('Descreva o motivo da ausencia na frente do comando.')                                  
                                         var nom = mek.participant
                                         const tag = {
-                                                text: `@${nom.split("@s.whatsapp.net")[0]} *MÉDIO AFK ${tels} NÃO PERTURBE SIM*`,
+                                                text: `@${nom.split("@s.whatsapp.net")[0]} *Motivo ausencia ${tels} NÃO PERTURBE*`,
                                                 contextInfo: { mentionedJid: [nom] }
                                         }
                                         client.sendMessage(from, tag, text, {quoted: mek})
