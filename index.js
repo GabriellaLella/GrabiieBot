@@ -1455,25 +1455,6 @@ if (text.includes("placa"))
 					buff = await getBuffer(anu.result.result)
 					client.sendMessage(from, buff, image, {quoted: mek})
 					break
-				case 'rize':
-					reply(mess.wait)
-					anu = await fetchJson(`https://api.fdci.se/rep.php?gambar=anime+rize`, {method: 'get'})
-					ri = JSON.parse(JSON.stringify(anu));
-					ze =  ri[Math.floor(Math.random() * ri.length)];
-					nye = await getBuffer(ze)
-					client.sendMessage(from, nye, image, { caption: 'rize chan!!', quoted: mek })
-					await limitAdd(sender) 	
-					break 
-				case 'mia':
-				  	if (!isNsfw) return reply(' *Ative o modo nsfw, para ativar use: .modonsfw on* ')
-					reply(mess.wait)
-					anu = await fetchJson(`https://testesw.herokuapp.com/`, {method: 'get'})
-					ri = JSON.parse(JSON.stringify(anu));
-					ze =  ri[Math.floor(Math.random() * ri.length)];
-					nye = await getBuffer(ze)
-					client.sendMessage(from, nye, image, { caption: 'i love you, mia 🥺❤️', quoted: mek })
-					await limitAdd(sender) 	
-					break 
 				case 'texteng':
 					if (args.length < 1) return reply(mess.blank)
 					tels = body.slice(9)
@@ -1790,19 +1771,7 @@ if (text.includes("placa"))
 			client.sendMessage(from, buffer, image, {quoted: mek, caption: `${teks}`})
 			await limitAdd(sender)
 			break
-	
-				case 'naruto':
-
-					reply(mess.wait)
-					anu = await fetchJson(`https://api.fdci.se/rep.php?gambar=Naruto`, {method: 'get'})
-					naru = JSON.parse(JSON.stringify(anu));
-					to =  naru[Math.floor(Math.random() * naru.length)];
-					nye = await getBuffer(to)
-					client.sendMessage(from, nye, image, { caption: 'naruto!!', quoted: mek })
-					await limitAdd(sender)
-					break 
 				case 'nsfwboquete':
-
 					reply(mess.wait)
 					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/nsfwblowjob}`, {method: 'get'})
 					naru = JSON.parse(JSON.stringify(anu));
@@ -1810,27 +1779,7 @@ if (text.includes("placa"))
 					nye = await getBuffer(to)
 					client.sendMessage(from, nye, image, { caption: 'naruto!!', quoted: mek })
 					await limitAdd(sender)
-					break 
-				case 'minato':
-
-					reply(mess.wait)
-					anu = await fetchJson(`https://api.fdci.se/rep.php?gambar=Minato`, {method: 'get'})
-					min = JSON.parse(JSON.stringify(anu));
-					ato =  min[Math.floor(Math.random() * min.length)];
-					nye = await getBuffer(ato)
-					client.sendMessage(from, nye, image, { caption: 'minato!!', quoted: mek })
-					await limitAdd(sender)
-					break 
-				case 'boruto':
-
-					reply(mess.wait)
-					anu = await fetchJson(`https://api.fdci.se/rep.php?gambar=Boruto`, {method: 'get'})
-					bor = JSON.parse(JSON.stringify(anu));
-					uto =  bor[Math.floor(Math.random() * bor.length)];
-					nye = await getBuffer(uto)
-					client.sendMessage(from, nye, image, { caption: 'boruto!!', quoted: mek })
-					await limitAdd(sender)
-					break 
+					break
 				case 'animecry':
 					cry = getRandom('.gif')
 					rano = getRandom('.webp')
@@ -1861,32 +1810,13 @@ case 'trap3':
 tujuh = fs.readFileSync('./assets/trap3.mp3');
 client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break
-		
-				case 'hinata':
-
-					reply(mess.wait)
-					anu = await fetchJson(`https://api.fdci.se/rep.php?gambar=Hinata`, {method: 'get'})
-					hina = JSON.parse(JSON.stringify(anu));
-					ta =  hina[Math.floor(Math.random() * hina.length)];
-					nye = await getBuffer(ta)
-					client.sendMessage(from, nye, image, { caption: 'hinata!!', quoted: mek })
-					await limitAdd(sender)
-					break 
            case 'hobby':
 
 					hobby = body.slice(1)
-					const hob =['Desah Di Game','Ngocokin Doi','Stalking sosmed nya mantan','Kau kan gak punya hobby awokawok','Memasak','Membantu Atok','Mabar','Nobar','Sosmedtan','Membantu Orang lain','Nonton Anime','Nonton Drakor','Naik Motor','Nyanyi','Menari','Bertumbuk','Menggambar','Foto fotoan Ga jelas','Maen Game','Berbicara Sendiri']
+					const hob =['Qual a raíz quadrade de 100?']
 					const by = hob[Math.floor(Math.random() * hob.length)]
-					client.sendMessage(from, 'Questão : *'+hobby+'*\n\nResponda : '+ by, text, { quoted: mek })
+					client.sendMessage(from, 'Questão: *'+hobby+'*\n\nResponda: '+ by, text, { quoted: mek })
 					await limitAdd(sender)
-					break
-				case 'gay':
-					if (!isGroup) return reply(mess.only.group)
-						membr = []
-						var number1 = ["1%", `2%`, `3%`, `4%`, `5%`, `6%`, `7%`, `8%`, `9%`, `10%`, `11%`, `12%`, `13%`, `14%`, `15%`, `16%`, `17%`, `18%`, `19%`, `20%`, `21%`, `22%`, `23%`, `24%`, `25%`, `26%`, `27%`, `28%`, `29%`, `30%`, `31%`, `32%`, `33%`, `34%`, `35%`, `36%`, `37%`, `38%`, `39%`, `40%`, `41%`, `42%`, `43%`, `44%`, `45%`, `46%`, `47%`, `48%`, `49%`, `50%`, `51%`, `52%`, `53%`, `54%`, `55%`, `56%`, `57%`, `58%`, `59%`, `60%`, `61%`, `62%`, `63%`, `64%`, `65%`, `66%`, `67%`, `68%`, `69%`, `70%`, `71%`, `72%`, `73%`, `74%`, `75%`, `76%`, `77%`, `78%`, `79%`, `80%`, `81%`, `82%`, `83%`, `84%`, `85%`, `86%`, `87%`, `88%`, `89%`, `90%`, `91%`, `92%`, `93%`, `94%`, `95%`, `96%`, `97%`, `98%`, `99%`, `100%`]
-						const number = number1[Math.floor(Math.random() * number.length)]
-						teks = `A porcentagem gay de\n\n${pushname}\n\né: ${number}`
-						mentions(teks, membr, true)
 					break
                 case 'nangis':
 
@@ -1937,26 +1867,6 @@ break
 					await limitAdd(sender)
 					break	
                 case 'truth':
-				case 'sasuke':
-
-					reply(mess.wait)
-					anu = await fetchJson(`https://api.fdci.se/rep.php?gambar=sasuke`, {method: 'get'})
-					sasu = JSON.parse(JSON.stringify(anu));
-					ke =  sasu[Math.floor(Math.random() * sasu.length)];
-					nye = await getBuffer(ke)
-					client.sendMessage(from, nye, image, { caption: 'sasuke!!', quoted: mek })
-					await limitAdd(sender) 
-					break 
-				case 'sakura':
-
-					reply(mess.wait)
-					anu = await fetchJson(`https://api.fdci.se/rep.php?gambar=sakura`, {method: 'get'})
-					sak = JSON.parse(JSON.stringify(anu));
-					kura =  sak[Math.floor(Math.random() * sak.length)];
-					nye = await getBuffer(kura)
-					client.sendMessage(from, nye, image, { caption: 'sakura!!', quoted: mek })
-					await limitAdd(sender) 
-					break 
 				case 'addfoto':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isOwner) return reply('Você quem é o dono? ')
