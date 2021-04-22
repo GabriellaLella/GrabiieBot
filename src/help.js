@@ -36,26 +36,26 @@ Seja bem-vindo
 *ATENÇÃO HELP SENDO FEITO*
   │
   ├─ 📌 ${prefix}toimg
-  ├─ 📌 ${prefix}darkjokes (memes aleatórios)
+  ├─ 📌 ${prefix}darkjokes memes aleatórios
   ├─ 📌 ${prefix}memeindo
   ├─ 📌 ${prefix}tts
-  ├─ 📌 ${prefix}leens [na legenda]
-  ├─ 📌 ${prefix}wait [na legenda]
+  ├─ 📌 ${prefix}leens necessita de foto e comando na legenda
+  ├─ 📌 ${prefix}wait necessita de foto e comando na legenda
   ├─ 📌 ${prefix}setprefix
   ├─ 📌 ${prefix}linkgp
-  ├─ 📌 ${prefix}simih [1/0]
+  ├─ 📌 ${prefix}simih 1 ativa e 0 desativa
   ├─ 📌 ${prefix}marcar
-  ├─ 📌 ${prefix}add [@]
-  ├─ 📌 ${prefix}banir [@]
-  ├─ 📌 ${prefix}promover [@]
+  ├─ 📌 ${prefix}add @
+  ├─ 📌 ${prefix}banir @
+  ├─ 📌 ${prefix}promover @
   ├─ 📌 ${prefix}rebaixar
   ├─ 📌 ${prefix}admins
-  ├─ 📌 ${prefix}bc [texto]
+  ├─ 📌 ${prefix}bc
   ├─ 📌 ${prefix}bloqueados
-  ├─ 📌 ${prefix}bloquear [@]
-  ├─ 📌 ${prefix}desbloquear [@]
+  ├─ 📌 ${prefix}bloquear @
+  ├─ 📌 ${prefix}desbloquear @
   ├─ 📌 ${prefix}limpar
-  ├─ 📌 ${prefix}bemvindo [1/0]
+  ├─ 📌 ${prefix}bemvindo 1 ativa e 0 desativa
   ├─ 📌 ${prefix}clonar
   ├─ 📌 ${prefix}owner ou .dono
   ├─ 📌 ${prefix}tts
@@ -78,14 +78,10 @@ Seja bem-vindo
   ├─ 📌 ${prefix}premiumlist
   ├─ 📌 ${prefix}delete
   ├─ 📌 ${prefix}modapk
-  ├─ 📌 .daftarvip [para virar Premium]
-  ├─ 📌 .qrcode
-  ├─ 📌 .chentai
-  ├─ 📌 .gcpf
-  ├─ 📌 .gbin
+  ├─ 📌 ${prefix}daftarvip
+  ├─ 📌 ${prefix}qrcode
   ├─ 📌 .pack
   ├─ 📌 .destrava
-  ├─ 📌 .gpessoa
   ├─ 📌 .banir
   ├─ 📌 .leveling [on/off]
   ├─ 📌 .level
