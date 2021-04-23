@@ -752,16 +752,6 @@ if (text.includes("placa"))
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
 
-				if (messagesC.includes("mandememe")){
-			client.updatePresence(from, Presence.composing)
-			data = fs.readFileSync('./src/darkjokes.js');
-                 jsonData = JSON.parse(data);
-                 randIndex = Math.floor(Math.random() * jsonData.length);
-                 randKey = jsonData[randIndex];
-                hasil = await getBuffer(randKey.result)
-                sendImage(hasil, mek, '*GELAP BOS :V*')
-	}
-
 		if (messagesC.includes("Te amo")){
 			client.updatePresence(from, Presence.composing)
 			reply("Eu tbm te amo")
@@ -1554,17 +1544,7 @@ if (text.includes("placa"))
                     }
                     reply(teks.trim())
 			     	await limitAdd(sender) 
-			     	break  
-			     case 'xvideos':
-              	    if (args.length < 1) return reply('Cadê o texto, mano?')
-                    anu = await fetchJson(`https://api.arugaz.my.id/api/media/xvideo/search?query=${body.slice(9)}`, {method: 'get'})
-                    teks = `===============\n`
-                    for (let b of anu.result) {
-                    teks += `• Título: ${b.title}\n• Info: ${b.info}\n• Link: ${b.link}\n===============\n`
-                    }
-                    reply(teks.trim())
-			     	await limitAdd(sender) 
-			     	break 
+			     	break
             case 'onichan':
             case 'bodoh':
                 client.sendMessage(from, buff, './lindy/baka.mp3', audio/mp3, {quoted: mek, ptt:true})
@@ -1736,20 +1716,6 @@ if (text.includes("placa"))
 					client.sendMessage(from, nye, image, { caption: 'naruto!!', quoted: mek })
 					await limitAdd(sender)
 					break
-				case 'animecry':
-					cry = getRandom('.gif')
-					rano = getRandom('.webp')
-					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/cry?apikey=${TobzApi}`, {method: 'get'})
-                   if (!isGroup) return reply(mess.only.group)
-					reply (mess.wait)
-					exec(`wget ${anu.result} -O ${cry} && ffmpeg -i ${cry} -vcodec libwebp -filter:v fps=fps=15 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
-						fs.unlinkSync(cry)
-						buffer = fs.readFileSync(rano)
-						client.sendMessage(from, buffer, sticker, {quoted: mek})
-						fs.unlinkSync(rano)
-					})
-					await limitAdd(sender) 
-					break 
 case 'onich':
 tujuh = fs.readFileSync('./assets/onich.mp3');
 client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
@@ -1766,12 +1732,12 @@ case 'trap3':
 tujuh = fs.readFileSync('./assets/trap3.mp3');
 client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 break
-           case 'hobby':
+           case 'pmatematica':
 
 					hobby = body.slice(1)
-					const hob =['Qual a raíz quadrade de 100?']
+					const hob =['Qual a raíz quadrade de 100?','Quanto é 6*7?']
 					const by = hob[Math.floor(Math.random() * hob.length)]
-					client.sendMessage(from, 'Questão: *'+hobby+'*\n\nResponda: '+ by, text, { quoted: mek })
+					client.sendMessage(from, 'Questão *'+Matematica+'*\n\nResponda: \n\nComando em *BETA*'+ by, text, { quoted: mek })
 					await limitAdd(sender)
 					break
                 case 'nangis':
@@ -1848,15 +1814,8 @@ break
 				case 'persengay':
 					if (args.length < 1) return reply('O que você quer procurar um?')
 					anu = await fetchJson(`https://arugaz.herokuapp.com/api/howgay`, {method: 'get'})
-					reply('De acordo com o percentual gay:\n\n'+anu.desc+anu.persen)
+					reply('De acordo com o percentual gay:\n\n'+anu.persen)
 					break
-			  case 'next':
-               
-                if (isGroup) return  reply( 'NÃO PODE ESTAR EM GRUPO KAK')
-                await reply('Ache um companheiro >_<')
-                await reply(`wa.me/${anug}`)
-                await reply( `Par encontrado: 🐊\n*${prefix}next* — Encontre novos parceiros`)
-                break
 			case 'instaimg':
 				if (!isUrl(args[0]) && !args[0].includes('www.instagram.com')) return reply(mess.error.lv)
 				    anu = await fetchJson(`https://alfians-api.herokuapp.com/api/ig?url=${args[0]}`, {method: 'get'})
@@ -1899,17 +1858,6 @@ break
 				case 'bucin':
 					anu = await fetchJson(`https://arugaz.herokuapp.com/api/howbucins`, {method: 'get'})
 					reply('Não fique entediado:\n\n'+anu.desc)
-					break
-			    case 'nsfwblowjob':
-				    try {
-						if (!isNsfw) return reply('❌ *FALSO* ❌')
-						res = await fetchJson(`https://tobz-api.herokuapp.com/api/nsfwblowjob`, {method: 'get'})
-						buffer = await getBuffer(res.result)
-						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Não faça ingredientes para o tio comum'})
-					} catch (e) {
-						console.log(`Error :`, color(e,'red'))
-						reply('❌ *ERRO* ❌')
-					}
 					break
 				case '10s':
 					setTimeout( () => {
@@ -2156,11 +2104,16 @@ break
 			        hasil = `${anu.result}`
 			        reply(hasil)
 			        break
-			    case 'infonomor':
-                    anu = await fetchJson(`https://docs-jojo.herokuapp.com/api/infonomor?no=${body.slice(10)}`)
-			        hasil = `*número* \n${anu.nomor} *internacional* \n${anu.international}`
-			        reply(hasil)
-			        break
+		            case 'infonomor':
+                     client.updatePresence(from, Presence.composing) 
+                     if (!isUser) return reply(mess.only.daftarB)
+                     if (args.length < 1) return reply(`Insira numeros\nExemplo : ${prefix}infonomor 556299663...`)
+                     data = await fetchJson(`API INFO NOMOR AQUI${body.slice(11)}`)
+                     if (data.error) return reply(data.error)
+                     if (data.result) return reply(data.result)
+                     hasil = `Internacional: ${data.international}\nNúmero: ${data.nomor}\nOperador: ${data.op}`
+                     reply(hasil)
+                     break
 			    case 'igstalk':
 					if (args.length < 1) return reply('Masukan username mu!!')
 					ige = body.slice(9)
@@ -3214,11 +3167,6 @@ case 'narutologo':
 					prefix = args[0]
 					reply(`O prefixo foi alterado com sucesso para: ${prefix}`)
 					break
-				case 'pronomeneu':
-					if (args.length < 1) return reply('Onde está o texto, hum?')
-					anu = await fetchJson(`https://mhankbarbars.herokuapp.com/api/hilih?teks=${body.slice(7)}`, {method: 'get'})
-					reply(anu.result)
-					break
 				case 'yt2mp3':
 					if (args.length < 1) return reply('Onde está o url, hum?')
 					if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply(mess.error.Iv)
@@ -3251,7 +3199,7 @@ case 'narutologo':
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					members_id = []
 					teks = (args.length > 1) ? body.slice(8).trim() : ''
-					teks += `  Total : ${groupMembers.length}\n`
+					teks += `  Total: ${groupMembers.length}\n`
 					for (let mem of groupMembers) {
 						teks += `╠➥ @${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
@@ -3265,7 +3213,7 @@ case 'narutologo':
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					members_id = []
 					teks = (args.length > 1) ? body.slice(8).trim() : ''
-					teks += `  Total : ${groupMembers.length}\n`
+					teks += `  Total: ${groupMembers.length}\n`
 					for (let mem of groupMembers) {
 						teks += `╠➥ ${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
@@ -3279,7 +3227,7 @@ case 'narutologo':
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					members_id = []
 					teks = (args.length > 1) ? body.slice(8).trim() : ''
-					teks += `  Total : ${groupMembers.length}\n`
+					teks += `  Total: ${groupMembers.length}\n`
 					for (let mem of groupMembers) {
 						teks += `╠➥ https://wa.me/${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
@@ -3293,7 +3241,7 @@ case 'narutologo':
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					members_id = []
 					teks = (args.length > 1) ? body.slice(8).trim() : ''
-					teks += `  Total : ${groupMembers.length}\n`
+					teks += `  Total: ${groupMembers.length}\n`
 					for (let mem of groupMembers) {
 						teks += `╠➥ ${mem.jid.split('@')[0]}@c.us\n`
 						members_id.push(mem.jid)
@@ -3307,7 +3255,7 @@ case 'narutologo':
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					members_id = []
 					teks = (args.length > 1) ? body.slice(8).trim() : ''
-					teks += `  Total : ${groupMembers.length}\n`
+					teks += `  Total: ${groupMembers.length}\n`
 					for (let mem of groupMembers) {
 						teks += `╠➥ ${mem.jid.split('@')[0]}@s.whatsapp.net\n`
 						members_id.push(mem.jid)
