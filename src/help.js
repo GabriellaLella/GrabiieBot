@@ -112,13 +112,11 @@ Seja bem-vindo
   ├─ 📌 ${prefix}ttp [texto]
   ├─ 📌 ${prefix}10s
   ├─ 📌 ${prefix}30s
-  ├─ 📌 .tomp3
-  ├─ 📌 .modoanime [on/off]
-  ├─ 📌 .modonsfw [on/off]
-  ├─ 📌 .happymod [jogo/app]
-  ├─ 📌 .rize
-  ├─ 📌 .ytsearch
-  ├─ 📌 .moddroid [jogo/app]
+  ├─ 📌 ${prefix}tomp3
+  ├─ 📌 ${prefix}modoanime 1 ativa e 0 desativa
+  ├─ 📌 ${prefix}modonsfw 1 ativa e 0 desativa
+  ├─ 📌 ${prefix}happymod nome do app ou jogo
+  ├─ 📌 ${prefix}ytsearch
   ├─ 📌 .videos [titulo]
   ├─ 📌 .nomegp
   ├─ 📌 .darkjokes | memes aleatórios
