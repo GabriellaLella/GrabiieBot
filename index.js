@@ -8,7 +8,6 @@ const {
 const { color, bgcolor } = require('./lib/color')
 const { help } = require('./src/help')
 const { modapk } = require('./src/modapk')
-const { vipmenu } = require('./src/vipmenu')
 const { destrava } = require('./src/destrava')
 const { destrava2 } = require('./src/destrava')
 const { issues } = require('./src/issues')
@@ -33,7 +32,6 @@ const { TobzApi } = JSON.parse(fs.readFileSync('./database/json/apikey.json'))
 const { VthearApi } = JSON.parse(fs.readFileSync('./database/json/apikey.json'))
 const { daftarvip } = require('./src/daftarvip')
 const { iklan } = require('./src/iklan')
-const { daftatvip } = require('./src/daftarvip')
 const ffmpeg = require('fluent-ffmpeg')
 const { removeBackgroundFromImageFile } = require('remove.bg')
 const imgbb = require('imgbb-uploader')
@@ -1203,52 +1201,52 @@ if (text.includes("placa"))
 				case 'modoanime':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
-					if (args.length < 1) return reply('Hmmmm')
-					if ((args[0]) === 'on') {
+					if (args.length < 1) return reply('1 para ativar, 0 para desligar')
+					if ((args[0]) === '1') {
 						if (isAnime) return reply('O modo anime já está ativo')
 						anime.push(from)
 						fs.writeFileSync('./database/json/anime.json', JSON.stringify(anime))
 						reply(`\`\`\`✓Ativado com sucesso o modo anime no grupo\`\`\` *${groupMetadata.subject}*`)
-					} else if ((args[0]) === 'off') {
+					} else if ((args[0]) === '0') {
 						anime.splice(from, 1)
 						fs.writeFileSync('./database/json/anime.json', JSON.stringify(anime))
 						reply(`\`\`\`✓Modo anime desativado com sucesso no grupo\`\`\` *${groupMetadata.subject}*`)
 					} else {
-						reply('On para ativar, Off para desligar')
+						reply('1 para ativar, 0 para desligar')
 					}
 					break
 					case 'antiracismo':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
-					if (args.length < 1) return reply('Hmmmm')
-					if ((args[0]) === 'on') {
+					if (args.length < 1) return reply('1 para ativar, 0 para desligar')
+					if ((args[0]) === '1') {
 						if (isAntiRacismo) return reply('O modo antiracismo já está ativo')
 						antiracismo.push(from)
 						fs.writeFileSync('./database/json/antiracismo.json', JSON.stringify(antiracismo))
 						reply(`\`\`\`✓Ativado com sucesso o modo antiracismo no grupo\`\`\` *${groupMetadata.subject}*`)
-					} else if ((args[0]) === 'off') {
+					} else if ((args[0]) === '0') {
 						antiracismo.splice(from, 1)
 						fs.writeFileSync('./database/json/antiracismo.json', JSON.stringify(antiracismo))
 						reply(`\`\`\`✓Modo antiracismo desativado com sucesso no grupo\`\`\` *${groupMetadata.subject}*`)
 					} else {
-						reply('On para ativar, Off para desligar')
+						reply('1 para ativar, 0 para desligar')
 					}
 					break
 				case 'modonsfw':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
-					if (args.length < 1) return reply('Hmmmm')
-					if ((args[0]) === 'on') {
+					if (args.length < 1) return reply('1 para ativar, 0 para desligar')
+					if ((args[0]) === '1') {
 						if (isNsfw) return reply('O modo nsfw já está ativo')
 						nsfw.push(from)
 						fs.writeFileSync('./database/json/nsfw.json', JSON.stringify(nsfw))
 						reply(`\`\`\`✓Ativado com sucesso o modo nsfw no grupo\`\`\` *${groupMetadata.subject}*`)
-					} else if ((args[0]) === 'off') {
+					} else if ((args[0]) === '0') {
 						nsfw.splice(from, 1)
 						fs.writeFileSync('./database/json/nsfw.json', JSON.stringify(nsfw))
 						reply(`\`\`\`✓Modo nsfw desativado com sucesso no grupo\`\`\` *${groupMetadata.subject}*`)
 					} else {
-						reply('On para ativar, Off para desligar')
+						reply('1 para ativar, 0 para desligar')
 					}
 					break
 				case 'rtext':
@@ -1384,9 +1382,9 @@ if (text.includes("placa"))
 					client.sendMessage(from, buff, image, {quoted: mek})
 					break
 				case 'ytsearch':
-					if (args.length < 1) return reply('Yang mau di cari apa?')
+					if (args.length < 1) return reply('O que você está procurando? Ex: ${prefix}ytsearch YAMEII')
 					reply(mess.wait)
-					anu = await fetchJson(`https://api.arugaz.my.id/api/media/ytsearch?query=${body.slice(10)}`, {method: 'get'})
+					anu = await fetchJson(`https://api.zeks.xyz/api/yts?q=${body.slice(10)}&apikey=apivinz`, {method: 'get'})
 					if (anu.error) return reply(anu.error)
 					teks = '=================\n'
 					for (let i of anu.result) {
@@ -1412,10 +1410,6 @@ if (text.includes("placa"))
 					anu = await fetchJson(`http://melodicxt.herokuapp.com/api/txtcustom?theme=blue_metal&text=${tels}&apiKey=administrator`, {method: 'get'})
 					buff = await getBuffer(anu.result)
 					client.sendMessage(from, buff, image, {quoted: mek})
-					break
-					case 'vipmenu':
-					if (!isPremium) return reply('Você não é um Membro Premium, entre em contato com o proprietário ou digite *#daftarvip* para comprar acesso Premium!' ,text, { quoted: mek })
-					client.sendMessage(from, vipmenu(prefix) , text, { quoted: mek })
 					break
 				case 'textsky':
 					if (args.length < 1) return reply(mess.blank)
@@ -1470,7 +1464,7 @@ if (text.includes("placa"))
 				case 'jogo':
 					anu = await fetchJson(`http://rt-files.000webhostapp.com/tts.php?apikey=rasitech`, {method: 'get'})
 					setTimeout( () => {
-					client.sendMessage(from, '*➸ Responda :* '+anu.result.jawaban+'\n'+anu.result.desk, text, {quoted: mek}) // ur cods
+					client.sendMessage(from, '*➸ Responda:* '+anu.result.jawaban+'\n'+anu.result.desk, text, {quoted: mek}) // ur cods
 					}, 30000) // 1000 = 1s,
 					setTimeout( () => {
 					client.sendMessage(from, '_10 Outro segundo…_', text) // ur cods
@@ -1548,7 +1542,7 @@ if (text.includes("placa"))
                     }
                     reply(teks.trim())
 			     	await limitAdd(sender) 
-			     	break  
+			     	break
 			     case 'nekopoi':
 			   reply(mess.wait)
               	    if (args.length < 1) return reply('Cadê o texto, mano?')
@@ -1717,26 +1711,18 @@ if (text.includes("placa"))
                 hasil = await getBuffer(randKey.result)
                 sendImage(hasil, mek, '*GELAP BOS :V*')
 				break
-                case 'alerta':
-				 data = fs.readFileSync('./src/alerta.js');
-                 jsonData = JSON.parse(data);
-                 randIndex = Math.floor(Math.random() * jsonData.length);
-                 randKey = jsonData[randIndex];
-                hasil = await getBuffer(randKey.result)
-                sendImage(hasil, mek, '*alerta :V*')
-				break									
-         case 'moddroid':
-			data = await fetchJson(`https://tobz-api.herokuapp.com/api/moddroid?q=${body.slice(10)}&apikey=${TobzApi}`)
-			hepi = data.result[0] 
-			teks = `*Nome*: ${data.result[0].title}\n*editor*: ${hepi.publisher}\n*mod info:* ${hepi.mod_info}\n*Tamanho*: ${hepi.size}\n*última versão*: ${hepi.latest_version}\n*gênero*: ${hepi.genre}\n*link:* ${hepi.link}\n*download*: ${hepi.download}`
-			buffer = await getBuffer(hepi.image)
+		case 'happymod':
+			data = await fetchJson(`https://api.zeks.xyz/api/happymod?apikey=apivinz&q=${body.slice(10)}`)
+			hupo = data.result[0] 
+			teks = `*Nome*: ${hupo.title}\n*link*: ${hupo.url}\n*Avaliação*: ${hupo.rating}`
+			buffer = await getBuffer(hupo.thumb)
 			client.sendMessage(from, buffer, image, {quoted: mek, caption: `${teks}`})
 			await limitAdd(sender)
 			break
-		case 'happymod':
-			data = await fetchJson(`https://tobz-api.herokuapp.com/api/happymod?q=${body.slice(10)}&apikey=${TobzApi}`)
+		case 'device':
+			data = await fetchJson(`https://api.zeks.xyz/api/gsmArena?apikey=apivinz&q=${body.slice(10)}`)
 			hupo = data.result[0] 
-			teks = `*Nome*: ${data.result[0].title}\n*versão*: ${hupo.version}\n*Tamanho:* ${hupo.size}\n*root*: ${hupo.root}\n*compra*: ${hupo.price}\n*link*: ${hupo.link}\n*download*: ${hupo.download}`
+			teks = `*Nome*: ${data.result[0].title}`
 			buffer = await getBuffer(hupo.image)
 			client.sendMessage(from, buffer, image, {quoted: mek, caption: `${teks}`})
 			await limitAdd(sender)
@@ -2123,23 +2109,23 @@ break
 					reply(`O nome do bot foi alterado com sucesso para : ${name}`)
 					break
 					case 'clove':
-					  if (args.length < 1) return reply('Cadê o texto, mano??')
-                     if (args.length > 10) return reply('pelo menos 10 caracteres')
+					  if (args.length < 1) return reply('Cadê o texto?')
+                     if (args.length > 10) return reply('O texto é muito longo, no máximo 10 palavras')
 					 love = `${body.slice(7)}`
 					 buff = await getBuffer(`https://api.vhtear.com/lovemessagetext?text=${love}&apikey=${VthearApi}`, {method: 'get'})
 					 client.sendMessage(from, buff, image, {quoted: mek})
 					 await limitAdd(sender)
 					 break 
 			    case 'lovemake':
-              	    if (args.length < 1) return reply('Onde está o texto, irmão??')
+              	    if (args.length < 1) return reply('Onde está o texto?')
                     teks = `${body.slice(8)}`
-                    if (teks.length > 10) return client.sendMessage(from, 'Teksnya kepanjangan, Maksimal 10 kalimat', text, {quoted: mek})
-                    buff = await getBuffer(`https://api.vhtear.com/lovemessagetext?text=${teks}&apikey=ANTIGRATISNIHANJENKKK`, {method: 'get'})
+                    if (teks.length > 10) return client.sendMessage(from, 'O texto é muito longo, no máximo 10 palavras', text, {quoted: mek})
+                    buff = await getBuffer(`https://api.vhtear.com/lovemessagetext?text=${teks}&apikey=${VthearApi}`, {method: 'get'})
                     client.sendMessage(from, buff, image, {quoted: mek, caption: `${teks}`})
 			     	break
                 	case 'tomp3':
                 	client.updatePresence(from, Presence.composing) 
-					if (!isQuotedVideo) return reply('Marque o video pfv')
+					if (!isQuotedVideo) return reply('Marque o video que deseja transformar em musica.')
 					reply(mess.wait)
 					encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 					media = await client.downloadAndSaveMediaMessage(encmedia)
