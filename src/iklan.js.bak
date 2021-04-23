@@ -5,7 +5,7 @@ const iklan = () => {
 ╠═══════════════════════════
 ╠➥ *LISTA DE ALUGUEL E CRIAR BOTS:*
 ╠➥ *ALUGUEL: GRÁTIS A ADIÇÃO A GRUPOS.*
-╠➥ *CRIAR: CRIAÇÃO DE UM BOT QUE VOCÊ TENHA DONO R$15,00*
+╠➥ *CRIAR: UM BOT QUE VOCÊ TENHA DONO R$15,00*
 ╠➥ *PODE PAGAR ATRAVÉS DE:*
 ╠➥ *MERCADO PAGO, BOLETO, PIX, PicPay e PayPal*
 ╠═══════════════════════════
