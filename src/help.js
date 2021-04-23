@@ -117,26 +117,20 @@ Seja bem-vindo
   ├─ 📌 ${prefix}modonsfw 1 ativa e 0 desativa
   ├─ 📌 ${prefix}happymod nome do app ou jogo
   ├─ 📌 ${prefix}ytsearch
-  ├─ 📌 .videos [titulo]
-  ├─ 📌 .nomegp
-  ├─ 📌 .darkjokes | memes aleatórios
-  ├─ 📌 .animecry
-  ├─ 📌 .next
-  ├─ 📌 .alerta
-  ├─ 📌 .pronomeneu [texto]
-  ├─ 📌 .hobby
+  ├─ 📌 ${prefix}nomegp
+  ├─ 📌 ${prefix}pmatematica
 Em teste
-  ├─ 📌 .trap1
-  ├─ 📌 .trap2
-  ├─ 📌 .trap3
-  ├─ 📌 .bot
-  ├─ 📌 .antilink [1/0]
-  ├─ 📌 .brainly [pergunta]
-  ├─ 📌 .antiracismo [on/off]
-  ├─ 📌 .setnomebot
-  ├─ 📌 .meme
+  ├─ 📌 ${prefix}trap1
+  ├─ 📌 ${prefix}trap2
+  ├─ 📌 ${prefix}trap3
+  ├─ 📌 ${prefix}bot
+  ├─ 📌 ${prefix}antilink 1 ativa e 0 desativa
+  ├─ 📌 ${prefix}brainly [pergunta]
+  ├─ 📌 ${prefix}antiracismo 1 ativa e 0 desativa
+  ├─ 📌 ${prefix}setnomebot
+
 Mandar a msg sem o prefixo
-  ├─ 📌 bot
+  │
   ├─ 📌 yamete ou kudasai
   └─ 📌 rojão ou rojao
 `
