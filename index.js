@@ -706,9 +706,9 @@ if (text.includes("placa"))
 			reply("e quem disse que isso e problema meu?")
 	}
 	
-		if (messagesC.includes("eae")){
+		if (messagesC.includes("Eae")){
 			client.updatePresence(from, Presence.composing)
-			reply("opa")
+			reply("Opa")
 	}
 
 			if (messagesC.includes("rojao")){
