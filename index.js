@@ -691,9 +691,9 @@ if (text.includes("placa"))
 			reply("Teu pai")
 	}
 			
-		if (messagesC.includes("Blz")){
+		if (messagesC.includes("blz")){
 			client.updatePresence(from, Presence.composing)
-			reply("Blz, e tu?")
+			reply("blz, e tu?")
 	}
 	
 		if (messagesC.includes("Lixo")){
@@ -706,9 +706,9 @@ if (text.includes("placa"))
 			reply("e quem disse que isso e problema meu?")
 	}
 	
-		if (messagesC.includes("Eae")){
+		if (messagesC.includes("eae")){
 			client.updatePresence(from, Presence.composing)
-			reply("Opa")
+			reply("opa")
 	}
 
 			if (messagesC.includes("rojao")){
