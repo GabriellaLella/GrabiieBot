@@ -970,13 +970,13 @@ if (text.includes("placa"))
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					await limitAdd(sender) 
 					break
-                case 'matrixlogo':
+                case 'phlogo':
                     if (!isGroup)return reply(mess.only.group)
 					gh = `${body.slice(12)}`
 					gbl1 = gh.split("/")[0];
 					gbl2 = gh.split("/")[1];
-					if (args.length < 1) return reply('Sou Vidente porra? cade o texto?')
-					buffer = await getBuffer(`https://api.zeks.xyz/api/wolflogo?apikey=apivinz&text1=ZEKS&text2=API`, {method: 'get'})
+					if (args.length < 1) return reply('Necessita de um texto. Exemplo: ${prefix}phlogo Grabiie/Bot')
+					buffer = await getBuffer(`https://api.zeks.xyz/api/phlogo?&apikey=apivinz&text1=${gbl1}&text2=${gbl2}`, {method: 'get'})
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					await limitAdd(sender) 
 					break
@@ -2086,19 +2086,6 @@ break
 						fs.unlinkSync(ran)
 					})
 					break
-				case 'boquet':
-				client.updatePresence(from, Presence.composing) 
-				 data = fs.readFileSync('./Fxc7/18.js');
-                 jsonData = JSON.parse(data);
-                 randIndex = jsonData[Math.floor(Math.random() * (jsonData.length))];
-                 randKey = jsonData[randIndex];
-                 randBokep = await getBuffer(randKey.image)
-                 reply(mess.wait)
-                 randTeks = await fetchJson(randKey.teks)
-                 client.sendMessage(from, randBokep, image, {quoted: mek, caption: randTeks})
-				await limitAdd(sender) 
-				break
-
 			    case 'shorturl':
                     anu = await fetchJson(`https://tobz-api.herokuapp.com/api/shorturl?url=${body.slice(10)}`)
 			        hasil = `${anu.result}`
