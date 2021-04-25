@@ -961,8 +961,6 @@ if (text.includes("placa"))
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					break
                                 case 'phlogo':
-                          if (isBanned) return reply(nad.baned())
-                          if (isLimit(sender)) return reply(limitend(pushname2))
 					var gh = body.slice(8)
 					coli1 = gh.split("/")[0];
 					coli2 = gh.split("/")[1];
