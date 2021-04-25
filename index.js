@@ -960,34 +960,16 @@ if (text.includes("placa"))
 					buffer = await getBuffer(`https://api.vhtear.com/galaxytext?text=${teks}&apikey=ANTIGRATISNIHANJENKKK`)
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					break
-                case 'gneon':
-                    if (!isGroup)return reply(mess.only.group)
-					gh = `${body.slice(12)}`
-					gbl1 = gh.split("/")[0];
-					gbl2 = gh.split("/")[1];
-					if (args.length < 1) return reply('Sou Vidente porra? cade o texto?')
-					buffer = await getBuffer(`https://api.zeks.xyz/api/bneon?apikey=apivinz&text=${teks}`, {method: 'get'})
+                                case 'phlogo':
+					var gh = body.slice(7)
+					var gbl1 = gh.split("/")[0];
+					var gbl2 = gh.split("/")[1];
+					if (args.length < 1) return reply(`Cadê o texto?\nExemplo: ${prefix}phlogo /Grabiie/Bot`)
+					reply(mess.wait)
+					anu = await fetchJson(`https://api.zeks.xyz/api/phlogo?&apikey=apivinz&text1=${gbl1}&text2=${gbl2}`, {method: 'get'})
+					buffer = await getBuffer(anu.result)
 					client.sendMessage(from, buffer, image, {quoted: mek})
-					await limitAdd(sender) 
-					break
-                case 'phlogo':
-                    if (!isGroup)return reply(mess.only.group)
-					gh = `${body.slice(12)}`
-					gbl1 = gh.split("/")[0];
-					gbl2 = gh.split("/")[1];
-					if (args.length < 1) return reply('Necessita de um texto. Exemplo: ${prefix}phlogo Grabiie/Bot')
-					buffer = await getBuffer(`https://api.zeks.xyz/api/phlogo?&apikey=apivinz&text1=${gbl1}&text2=${gbl2}`, {method: 'get'})
-					client.sendMessage(from, buffer, image, {quoted: mek})
-					await limitAdd(sender) 
-					break
-				case 'ramaljadian':
-					var gh = body.slice(10)
-					var gbl1 = gh.split("|")[0];
-					var gbl2 = gh.split("|")[1];
-					var gbl3 = gh.split("|")[2];
-					anu = await fetchJson(`https://api.vhtear.com/harijadian?tgl=${gbl1}&bln=${gbl2}&thn=${gbl3}&apikey=ANTIGRATISNIHANJENKKK`)
-					reply(anu.result.hasil)
-					break
+					brea
 				case 'encode64':
 
 				encode64 = `${body.slice(10)}`
