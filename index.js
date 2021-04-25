@@ -961,15 +961,16 @@ if (text.includes("placa"))
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					break
                                 case 'phlogo':
-					var gh = body.slice(7)
-					var gbl1 = gh.split("/")[0];
-					var gbl2 = gh.split("/")[1];
-					if (args.length < 1) return reply(`Cadê o texto?\nExemplo: ${prefix}phlogo /Grabiie/Bot`)
-					reply(mess.wait)
-					anu = await fetchJson(`https://api.zeks.xyz/api/phlogo?&apikey=apivinz&text1=${gbl1}&text2=${gbl2}`, {method: 'get'})
-					buffer = await getBuffer(anu.result)
-					client.sendMessage(from, buffer, image, {quoted: mek})
-					brea
+                          user.push(sender)
+                          if (isBanned) return reply(nad.baned())
+                          if (isLimit(sender)) return reply(limitend(pushname2))
+					var gh = body.slice(8)
+					coli1 = gh.split("/")[0];
+					coli2 = gh.split("/")[1];
+					if (args.length < 1) return reply('Coloque um texto na frente. Exemplo: Grabiie/Bot')
+					party = await getBuffer(`https://api.zeks.xyz/api/phlogo?text1=${coli1}&text2=${coli2}&apikey=apivinz`)					
+					client.sendMessage(from, party, image, {quoted: mek})
+					break
 				case 'encode64':
 
 				encode64 = `${body.slice(10)}`
