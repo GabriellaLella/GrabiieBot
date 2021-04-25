@@ -1,7 +1,6 @@
 const animelista = (prefix) => {
 
-	return `
- 👇*Esta é a lista de animes que o grabiie assistiu:*👇
+	return `👇*Esta é a lista de animes que o grabiie assistiu:*👇
   
 _Death Note_
 Sobre: Light Yagami é um estudante primoroso, com um currículo impecável, popular com as garotas, e entediado que só. Mas sua vida muda quando um Shinigami lhe oferece um caderno capaz de matar qualquer pessoa que ele quiser.
