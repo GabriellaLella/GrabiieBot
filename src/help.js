@@ -35,6 +35,7 @@ Seja bem-vindo
 
 *ATENÇÃO HELP SENDO FEITO*
   │
+  ├─ 📌 ${prefix}phlogo 
   ├─ 📌 ${prefix}toimg
   ├─ 📌 ${prefix}darkjokes memes aleatórios
   ├─ 📌 ${prefix}memeindo
