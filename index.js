@@ -3157,21 +3157,20 @@ case 'narutologo':
 					nulis = await getBuffer(`https://api.zeks.xyz/api/magernulis?nama=${nama}&kelas=${kelas}&text=${isi}&tinta=4`, {method: 'get'})
 					client.sendMessage(from, nulis, image, {quoted: mek})
 					await limitAdd(sender) 
-					break  
+					break
 				case 'tagall':
 				case 'marcar':
 				client.updatePresence(from, Presence.composing) 
 					if (!isGroup) return reply(mess.only.group)
-                                        if (!isUser) return reply(mess.only.daftarB)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					members_id = []
 					teks = (args.length > 1) ? body.slice(8).trim() : ''
-					teks += `  Total: ${groupMembers.length}\n`
+					teks += `  Total : ${groupMembers.length}\n`
 					for (let mem of groupMembers) {
 						teks += `╠➥ @${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
-					mentions('╔══✪〘 Mencionando Todos 〙✪══\n╠➥'+teks+'╚═〘 Grabiie Bot 〙', members_id, true)
+					mentions('╔══✪〘 Mencionando Todos 〙✪══\n╠➥'+teks+'╚═〘 GrabiieBot 〙', members_id, true)
 					break
                 case 'tagall1':
 		case 'marcar1':
@@ -3180,12 +3179,12 @@ case 'narutologo':
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					members_id = []
 					teks = (args.length > 1) ? body.slice(8).trim() : ''
-					teks += `  Total: ${groupMembers.length}\n`
+					teks += `  Total : ${groupMembers.length}\n`
 					for (let mem of groupMembers) {
 						teks += `╠➥ ${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
-					client.sendMessage(from, '╔══✪〘 Mencionando Todos 〙✪══\n╠➥'+teks+'╚═〘 Grabiie Bot 〙', text, {quoted: mek})
+					client.sendMessage(from, '╔══✪〘 Mencionando Todos 〙✪══\n╠➥'+teks+'╚═〘 GrabiieBot 〙', text, {quoted: mek})
 					break
                 case 'tagall2':
 		case 'marcar2':
@@ -3194,12 +3193,12 @@ case 'narutologo':
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					members_id = []
 					teks = (args.length > 1) ? body.slice(8).trim() : ''
-					teks += `  Total: ${groupMembers.length}\n`
+					teks += `  Total : ${groupMembers.length}\n`
 					for (let mem of groupMembers) {
 						teks += `╠➥ https://wa.me/${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
-					client.sendMessage(from, '╔══✪〘 Mencionando Todos 〙✪══\n╠➥'+teks+'╚═〘 Grabiie Bot 〙', text, {detectLinks: false, quoted: mek})
+					client.sendMessage(from, '╔══✪〘 Mencionando Todos 〙✪══\n╠➥'+teks+'╚═〘 GrabiieBot 〙', text, {detectLinks: false, quoted: mek})
 					break
                         case 'tagall3':
 			case 'marcar3':
@@ -3208,12 +3207,12 @@ case 'narutologo':
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					members_id = []
 					teks = (args.length > 1) ? body.slice(8).trim() : ''
-					teks += `  Total: ${groupMembers.length}\n`
+					teks += `  Total : ${groupMembers.length}\n`
 					for (let mem of groupMembers) {
 						teks += `╠➥ ${mem.jid.split('@')[0]}@c.us\n`
 						members_id.push(mem.jid)
 					}
-					client.sendMessage(from, '╔══✪〘 Mencionando Todos 〙✪══\n╠➥'+teks+'╚═〘 Grabiie Bot 〙', text, {quoted: mek})
+					client.sendMessage(from, '╔══✪〘 Mencionando Todos 〙✪══\n╠➥'+teks+'╚═〘 GrabiieBot 〙', text, {quoted: mek})
 					break
                 case 'tagall4':
 		case 'marcar4':
@@ -3222,12 +3221,12 @@ case 'narutologo':
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					members_id = []
 					teks = (args.length > 1) ? body.slice(8).trim() : ''
-					teks += `  Total: ${groupMembers.length}\n`
+					teks += `  Total : ${groupMembers.length}\n`
 					for (let mem of groupMembers) {
 						teks += `╠➥ ${mem.jid.split('@')[0]}@s.whatsapp.net\n`
 						members_id.push(mem.jid)
 					}
-					reply('╔══✪〘 Mencionando Todos 〙✪══\n╠➥'+teks+'╚═〘 Grabiie Bot 〙')
+					reply('╔══✪〘 Mencionando Todos 〙✪══\n╠➥'+teks+'╚═〘 GrabiieBot 〙')
 					break
 				case 'limpar':
 					if (!isOwner) return reply('Só o meu dono pode limpar os chats.')
