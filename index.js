@@ -51,7 +51,7 @@ const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n' 
             + 'FN:Grabiie\n' // Nama kamu
             + 'ORG:Lexa;\n' // Nama bot
-            + 'TEL;type=CELL;type=VOICE;waid=5535999191111:+55 35 999191111\n' //Nomor whatsapp kamu
+            + 'TEL;type=CELL;type=VOICE;waid=553599191111:+55 35 99191111\n' //Nomor whatsapp kamu
             + 'END:VCARD'
 prefix = '.'
 blocked = []
