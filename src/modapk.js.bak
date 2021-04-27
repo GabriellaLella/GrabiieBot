@@ -4,11 +4,8 @@ const modapk = () => {
 
 ATENÇÃO EU NÃO APOIO ESSE TIPO DE CONTEÚDO, SE VOCÊ TIVER CONDIÇÕES COMPRE PARA APOIAR O DESENVOLVEDOR.
 
-• Minecraft 1.16.220.02
-https://www.mediafire.com/file/qvv7v2rp36c09x2
-
-• Geometry Dash (MOD)
-http://www.mediafire.com/file/thnoi1wpa5ex2wn
+• Minecraft 1.16.221.01
+https://www.mediafire.com/file/tnw61wxggjsu6a3
 
 • YouTube Vanced (Ao utilizar esse app você retira os anuncios do YouTube mais o YouTuber não recebe o AdSense/dinheiro)
 https://vancedapp.com/
