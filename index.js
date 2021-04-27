@@ -2967,7 +2967,7 @@ case 'narutologo':
 						}
 						break
 				case 'tts':
-					if (args.length < 1) return client.sendMessage(from, 'Cade a lingua?\n Exemplo: *tts pt palavra', text, {quoted: mek})
+					if (args.length < 1) return client.sendMessage(from, 'Cade a lingua?\n Exemplo: .tts pt palavra', text, {quoted: mek})
 					const gtts = require('./lib/gtts')(args[0])
 					if (args.length < 2) return client.sendMessage(from, 'Cadê o texto?', text, {quoted: mek})
 					dtt = body.slice(9)
