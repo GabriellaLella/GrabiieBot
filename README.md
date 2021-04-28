@@ -67,7 +67,7 @@ pm2 monit
 ```
 # Windows e Linux
 
-Não sei como adaptador o bot para esses dois sistemas mais se eu conseguir irei atualizar
+Não sei como adaptar o bot a esses dois sistemas.
 
 # Ajude o projeto
 
