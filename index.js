@@ -968,6 +968,27 @@ if (text.includes("placa"))
 					party = await getBuffer(`https://api.zeks.xyz/api/phlogo?text1=${coli1}&text2=${coli2}&apikey=apivinz`)					
 					client.sendMessage(from, party, image, {quoted: mek})
 					break
+case 'logolol':
+                    teks = body.slice(9)
+                    a = await fetchJson(`https://api-exteam.herokuapp.com/api/photooxy?tema=retro-avatar&teks=${teks}`, {method: 'get'})
+                    b = await getBuffer(a.data)
+                    client.sendMessage(from, b, image, {quoted: mek})
+                    break
+case 'gtav':
+	var imgbb = require('imgbb-uploader')
+	if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
+	  ted = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo: mek
+	  reply(mess.wait)
+	  owgi = await client.downloadAndSaveMediaMessage(ted)
+	  tels = body.slice(7)
+	  anu = await imgbb("caabb4691c8150cbe4af119d5f64e651", owgi)
+	  hehe = await fetchJson(`https://api-exteam.herokuapp.com/api/photooxy/foto?tema=gtav&teks=${anu.display_url}`)
+buffer = await getBuffer(hehe.data.img)
+					client.sendMessage(from, buffer, image, {quoted: mek})
+	} else {
+	  reply('marca a imagem/Nao adicione nada au comando')
+	}
+	break
 				case 'encode64':
 
 				encode64 = `${body.slice(10)}`
@@ -2472,18 +2493,15 @@ break
 						reply('❌ *ERROR* ❌')
 					}
 					break
-                 case 'secreto':
-                reply(mess.wait)
-                play = body.slice(5)
-                anu = await fetchJson(`http://api-gdr.herokuapp.com/api/ytplaymp3?q=${play}`)
+case 'play':
+                play = body.slice(6)
+                anu = await fetchJson(`https://api-exteam.herokuapp.com/api/yt/playmp3?query=${play}&apikey=estreia`)
                if (anu.error) return reply(anu.error)
-	       if (args.length < 1) return client.sendMessage(from, 'Nome da música na frente do comando!', text, {quoted: mek})
-                 infomp3 = `*MUSICA ENCONTRADA!!!*\nTítulo: ${anu.title}\nUrl: ${anu.fonte}\nTamanho : ${anu.size}\n\n*ESPERE UM POUQUINHO, N SPAME O CHAT*`
+                 info = `「 Título 」: ${anu.title}\n*「 Publicado em 」* : ${anu.published}\n*「 Canal 」* : ${anu.channel}`
                 buffer = await getBuffer(anu.thumb)
-                lagu = await getBuffer(anu.url_audio)
-                client.sendMessage(from, buffer, image, {quoted: mek, caption: infomp3})
-                client.sendMessage(from, lagu, audio, {mimetype: 'audio/mp4', filename: `${anu.title}.mp3`, quoted: mek})
-                await limitAdd(sender)
+                music = await getBuffer(anu.url)
+                client.sendMessage(from, buffer, image, {quoted: mek, caption: info})
+                client.sendMessage(from, music, audio, {mimetype: 'audio/mp4', filename: `${anu.title}.mp3`, quoted: mek})
                 break
 				case 'setnome':
                      if (!isGroup) return reply(mess.only.group)
