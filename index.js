@@ -970,9 +970,10 @@ if (text.includes("placa"))
 					break
 case 'logolol':
                     teks = body.slice(9)
-                    a = await fetchJson(`https://api-exteam.herokuapp.com/api/photooxy?tema=retro-avatar&teks=${teks}`, {method: 'get'})
-                    b = await getBuffer(a.data)
-                    client.sendMessage(from, b, image, {quoted: mek})
+                    a = await fetchJson(`https://api-exteam.herokuapp.com/api/photooxy?tema=retro-avatar&teks=${teks}`)
+                    b = await fetchJson(`https://api.imgbb.com/1/upload?expiration=1000&key=761ea2d5575581057a799d14e9c78e28&image=${a.data}&nameEx-team`)
+                    c = await getBuffer(b.data.url)
+                    client.sendMessage(from, c, image, {quoted: mek})
                     break
 case 'gtav':
 	var imgbb = require('imgbb-uploader')
