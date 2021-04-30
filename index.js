@@ -1120,15 +1120,7 @@ if (text.includes("placa"))
                       anu = await fetchJson(`https://tobz-api.herokuapp.com/api/textpro?theme=ninjalogo&text1=${gl1}&text2=${gl2}`, {method: 'get'})
                       buff = await getBuffer(anu.result)
                       client.sendMessage(from, buff, image, {quoted: mek})
-                      break
-		case 'tahta':
-                tahta = `${body.slice(7)}`
-                     if (args.length < 1) return reply('Cadê o texto, mano??')
-                     if (args.length > 10) return reply('mínimo 10 linhas')
-                     buff = await getBuffer(`https://api.zeks.xyz/api/hartatahta?text=${tahta}&apikey=apivinz`, {method: 'get'})
-                     anker.sendMessage(from, buff, image, {quoted: mek, caption: `Tesouro do trono ${tahta}`})
-                  await limitAdd(sender) 
-                  break  
+                      break 
                     case 'glitch':
                     gh = body.slice(7)
                     teks1 = gh.split("|")[0];
