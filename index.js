@@ -2084,8 +2084,7 @@ break
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					break
                                 case 'mining':
-                                        if (isLimit(sender)) return reply(ind.limitend(pushname))
-                                        if (!isEventon) return reply(`maaf ${pushname} event mining tidak di aktifkan oleh owner`)
+                                        if (!isEventon) return reply(`Desculpe ${pushname} a mineração de eventos é ativada pelo proprietário`)
                                         if (isOwner) {
                                                 const one = 999999999
                                                 addLevelingXp(sender, one)
@@ -2102,19 +2101,11 @@ break
 				    try {
 						res = await fetchJson(`https://tobz-api.herokuapp.com/api/waifu`, {method: 'get'})
 						buffer = await getBuffer(res.image)
-						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'ksksksks hmm'})
+						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Casada?'})
 					} catch (e) {
 						console.log(`Error :`, color(e,'red'))
 						reply('❌ *ERROR* ❌')
 					}
-					break
-			    case 'waifu2':
-					reply(mess.wait)
-					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/waifu`, {method: 'get'})
-					if (anu.error) return reply(anu.error)
-					buffer = await getBuffer(anu.image)
-					waifu = `*${anu.desc}`
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: waifu})
 					break
 				case 'text3d':
               	    if (args.length < 1) return reply('Onde está o texto, irmão??')
