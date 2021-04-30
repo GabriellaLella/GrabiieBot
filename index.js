@@ -950,7 +950,7 @@ if (text.includes("placa"))
 					teks = body.slice(12)
 					if (teks.length > 8) return reply('O texto é longo, com até 8 caracteres')
 					reply(mess.wait)
-					buffer = await getBuffer(`https://api.vhtear.com/galaxytext?text=${teks}&apikey=ANTIGRATISNIHANJENKKK`)
+					buffer = await getBuffer(`https://api.vhtear.com/galaxytext?text=${teks}&apikey={VthearApi}`)
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					break
                                 case 'phlogo':
@@ -961,13 +961,6 @@ if (text.includes("placa"))
 					party = await getBuffer(`https://api.zeks.xyz/api/phlogo?text1=${coli1}&text2=${coli2}&apikey=apivinz`)					
 					client.sendMessage(from, party, image, {quoted: mek})
 					break
-case 'logolol':
-                    teks = body.slice(9)
-                    a = await fetchJson(`https://api-exteam.herokuapp.com/api/photooxy?tema=retro-avatar&teks=${teks}`)
-                    b = await fetchJson(`https://api.imgbb.com/1/upload?expiration=1000&key=761ea2d5575581057a799d14e9c78e28&image=${a.data}&nameEx-team`)
-                    c = await getBuffer(b.data.url)
-                    client.sendMessage(from, c, image, {quoted: mek})
-                    break
 				case 'ip':
   { const aris = text.replace(/.ip /, "") 
   axios.get(`https://mnazria.herokuapp.com/api/check?ip=${aris}`).then((res) =>{ 
@@ -1051,7 +1044,7 @@ case 'logolol':
 					teks = body.slice(7)
 					if (teks.length > 9) return reply('O texto é longo, até 9 caracteres')
 					reply(mess.wait)
-					buffer = await getBuffer(`https://api.vhtear.com/hartatahta?text=${teks}&apikey=ANTIGRATISNIHANJENKKK`)
+					buffer = await getBuffer(`https://api.vhtear.com/hartatahta?text=${teks}&apikey={VthearApi}`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Harta Tahta '+teks})
 					break
 				case 'testing':
@@ -1089,7 +1082,7 @@ case 'logolol':
 					love = body.slice(10)
 					if (love.length > 12) return reply('O texto é longo, até 9 caracteres')
 					reply(mess.wait)
-					buffer = await getBuffer(`https://api.vhtear.com/lovemessagetext?text=${love}&apikey=ANTIGRATISNIHANJENKKK`)
+					buffer = await getBuffer(`https://api.vhtear.com/lovemessagetext?text=${love}&apikey={VthearApi}`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: ' '+love})
 					break
 				case 'thunder':
@@ -1097,7 +1090,7 @@ case 'logolol':
 					thun = body.slice(9)
 					if (thun.length > 10) return reply('O texto é longo, até 9 caracteres')
 					reply(mess.wait)
-					buffer = await getBuffer(`https://api.vhtear.com/thundertext?text=${thun}&apikey=ANTIGRATISNIHANJENKKK`)
+					buffer = await getBuffer(`https://api.vhtear.com/thundertext?text=${thun}&apikey={VthearApi}`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: ' '+thun})
 					break
                 case 'stiltext':
@@ -1105,7 +1098,7 @@ case 'logolol':
                       gh = body.slice(11)
                       gl1 = gh.split("|")[0];
                       gl2 = gh.split("|")[1];
-                      buff = await getBuffer(`https://api.vhtear.com/silktext?text=${gl1}&text2=${gl2}&apikey=ANTIGRATISNIHANJENKKK`)
+                      buff = await getBuffer(`https://api.vhtear.com/silktext?text=${gl1}&text2=${gl2}&apikey={VthearApi}`)
                       reply(mess.wait)
                       client.sendMessage(from, buff, image, {quoted: mek, caption: 'thund ni '+gh})
                       break
@@ -1124,7 +1117,7 @@ case 'logolol':
 					coli2 = gh.split("|")[1];
 					if (args.length < 1) return reply('Cadê o texto?')
 					reply(mess.wait)
-					party = await getBuffer(`https://api.vhtear.com/partytext?text=${coli1}&text2=${coli2}&apikey=ANTIGRATISNIHANJENKKK`)
+					party = await getBuffer(`https://api.vhtear.com/partytext?text=${coli1}&text2=${coli2}&apikey={VthearApi}`)
 					client.sendMessage(from, party, image, {quoted: mek})
 					break
                 case 'ninjalogo':
@@ -1172,7 +1165,7 @@ case 'logolol':
 					part = body.slice(7)
 					if (part.length > 20) return reply('O texto é muito longo, até 20 caracteres')
 					reply(mess.wait)
-					buffer = await getBuffer(`https://api.vhtear.com/partytext?text=${part}&apikey=ANTIGRATISNIHANJENKKK`)
+					buffer = await getBuffer(`https://api.vhtear.com/partytext?text=${part}&apikey={VthearApi}`)
 					client.sendMessage(from, buffer, image, {caption: 'Aqui amigo (a)', quoted: mek})
 					break
 				case 'modoanime':
@@ -1231,7 +1224,7 @@ case 'logolol':
 					tels5 = body.slice(7)
 					if (tels5.length > 10) return reply('O texto é longo, com até 10 caracteres')
 					reply(mess.wait)
-					buffer = await getBuffer(`https://api.vhtear.com/romancetext?text=${tels5}&apikey=ANTIGRATISNIHANJENKKK`)
+					buffer = await getBuffer(`https://api.vhtear.com/romancetext?text=${tels5}&apikey={VthearApi}`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: tels5})
 					break
 				case 'water':
@@ -1635,7 +1628,7 @@ case 'logolol':
                 case 'image':
 					if (args.length < 1) return reply('O que você quer procurar?')
 					goo = body.slice(7)
-					anu = await fetchJson(`https://api.vhtear.com/googleimg?query=${goo}&apikey=ANTIGRATISNIHANJENKKK`, {method: 'get'})
+					anu = await fetchJson(`https://api.vhtear.com/googleimg?query=${goo}&apikey={VthearApi}`, {method: 'get'})
 					reply(mess.wait)
 				    var pol = JSON.parse(JSON.stringify(anu.result.result_search));
                     var tes2 =  pol[Math.floor(Math.random() * pol.length)];
@@ -2092,7 +2085,7 @@ break
 					if (args.length < 1) return reply('Masukan username mu!!')
 					ige = body.slice(9)
 					reply(mess.wait)
-					anu = await fetchJson(`https://api.vhtear.com/igprofile?query=${ige}&apikey=ANTIGRATISNIHANJENKKK`, {method: 'get'})
+					anu = await fetchJson(`https://api.vhtear.com/igprofile?query=${ige}&apikey={VthearApi}`, {method: 'get'})
 					buffer = await getBuffer(anu.result.picture)
 					capt = `User Ditemukan!!\n\n*➸ Nama :* ${anu.result.full_name}\n*➸ Username :* ${anu.result.username}\n*➸ Followers :* ${anu.result.follower}\n*➸ Mengikuti :* ${anu.result.follow}\n*➸ Jumlah Post :* ${anu.result.post_count}\n*➸ Private :* ${anu.result.is_private}\n*➸ Bio :* ${anu.result.biography}`
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: capt})
@@ -2156,7 +2149,7 @@ break
 					break
 				case 'wibu':
 					reply(mess.wait)
-					anu = await fetchJson(`https://api.vhtear.com/randomwibu&apikey=ANTIGRATISNIHANJENKKK`)
+					anu = await fetchJson(`https://api.vhtear.com/randomwibu&apikey={VthearApi}`)
 					if (anu.error) return reply(anu.error)
 					buffer = await getBuffer(anu.result.foto)
 					wibu = ` ➸ *nome* ${anu.result.nama} ➸ *descrição* ${anu.result.deskripsi}`
@@ -2417,6 +2410,7 @@ break
 					break 
                 case 'opengc':
                 case 'bukagc':
+		case 'abrirgrupo':
 					client.updatePresence(from, Presence.composing) 
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
@@ -2447,14 +2441,14 @@ break
 					break					
 				case 'randomcat':
 					reply(mess.wait)
-					anu = await fetchJson(`https://api.vhtear.com/randomcat?apikey=ANTIGRATISNIHANJENKKK`)
+					anu = await fetchJson(`https://api.vhtear.com/randomcat?apikey={VthearApi}`)
 					if (anu.error) return reply(anu.error)
 					buffer = await getBuffer(anu.result.url)
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					break
 				case 'mlherolist':
 					reply(mess.wait)
-					anu = await fetchJson(`https://api.vhtear.com/mlherolist?apikey=ANTIGRATISNIHANJENKKK`)
+					anu = await fetchJson(`https://api.vhtear.com/mlherolist?apikey={VthearApi}`)
 					icon = await getBuffer(anu.icon)
 					client.sendMessage(from, icon, image, {quoted: mek})
 					break
@@ -2501,7 +2495,7 @@ case 'play':
 					teks = body.slice(12)
 					if (teks.length > 8) return reply('O texto é longo, com até 8 caracteres')
 					reply(mess.wait)
-					buffer = await getBuffer(`https://api.vhtear.com/galaxytext?text=${teks}&apikey=ANTIGRATISNIHANJENKKK`)
+					buffer = await getBuffer(`https://api.vhtear.com/galaxytext?text=${teks}&apikey={VthearApi}`)
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					break
                 case 'agua':
@@ -2581,7 +2575,7 @@ case 'narutologo':
 					var gh = body.slice(14)
 					var gbl1 = gh.split("|")[0];
 					var gbl2 = gh.split("|")[1];
-					anu = await fetchJson(`https://api.vhtear.com/primbonjodoh?nama=${gbl1}&pasangan=${gbl2}&apikey=ANTIGRATISNIHANJENKKK`)
+					anu = await fetchJson(`https://api.vhtear.com/primbonjodoh?nama=${gbl1}&pasangan=${gbl2}&apikey={VthearApi}`)
 					reply(anu.result.hasil)
 					break
 				case 'ramaljadian':
@@ -2589,7 +2583,7 @@ case 'narutologo':
 					var gbl1 = gh.split("|")[0];
 					var gbl2 = gh.split("|")[1];
 					var gbl3 = gh.split("|")[2];
-					anu = await fetchJson(`https://api.vhtear.com/harijadian?tgl=${gbl1}&bln=${gbl2}&thn=${gbl3}&apikey=ANTIGRATISNIHANJENKKK`)
+					anu = await fetchJson(`https://api.vhtear.com/harijadian?tgl=${gbl1}&bln=${gbl2}&thn=${gbl3}&apikey={VthearApi}`)
 					reply(anu.result.hasil)
 					break
                       case 'gayi': 
@@ -2619,7 +2613,7 @@ case 'narutologo':
 					teks = body.slice(7)
 					if (teks.length > 9) return reply('O texto é longo, até 9 caracteres')
 					reply(mess.wait)
-					buffer = await getBuffer(`https://api.vhtear.com/hartatahta?text=${teks}&apikey=ANTIGRATISNIHANJENKKK`)
+					buffer = await getBuffer(`https://api.vhtear.com/hartatahta?text=${teks}&apikey={VthearApi}`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Harta Tahta '+teks})
 					break
 				case 'testing':
@@ -2670,7 +2664,7 @@ case 'narutologo':
 					love = body.slice(10)
 					if (love.length > 12) return reply('O texto é longo, até 9 caracteres')
 					reply(mess.wait)
-					buffer = await getBuffer(`https://api.vhtear.com/lovemessagetext?text=${love}&apikey=ANTIGRATISNIHANJENKKK`)
+					buffer = await getBuffer(`https://api.vhtear.com/lovemessagetext?text=${love}&apikey={VthearApi}`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: ' '+love})
 					break
 				case 'thunder':
@@ -2678,7 +2672,7 @@ case 'narutologo':
 					thun = body.slice(9)
 					if (thun.length > 10) return reply('O texto é longo, até 9 caracteres')
 					reply(mess.wait)
-					buffer = await getBuffer(`https://api.vhtear.com/thundertext?text=${thun}&apikey=ANTIGRATISNIHANJENKKK`)
+					buffer = await getBuffer(`https://api.vhtear.com/thundertext?text=${thun}&apikey={VthearApi}`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: ' '+thun})
 					break
                 case 'stiltext':
@@ -2686,7 +2680,7 @@ case 'narutologo':
                       gh = body.slice(11)
                       gl1 = gh.split("|")[0];
                       gl2 = gh.split("|")[1];
-                      buff = await getBuffer(`https://api.vhtear.com/silktext?text=${gl1}&text2=${gl2}&apikey=ANTIGRATISNIHANJENKKK`)
+                      buff = await getBuffer(`https://api.vhtear.com/silktext?text=${gl1}&text2=${gl2}&apikey={VthearApi}`)
                       reply(mess.wait)
                       client.sendMessage(from, buff, image, {quoted: mek, caption: 'thund ni '+gh})
                       break
@@ -2705,7 +2699,7 @@ case 'narutologo':
 					coli2 = gh.split("|")[1];
 					if (args.length < 1) return reply('Cadê o texto?')
 					reply(mess.wait)
-					party = await getBuffer(`https://api.vhtear.com/partytext?text=${coli1}&text2=${coli2}&apikey=ANTIGRATISNIHANJENKKK`)
+					party = await getBuffer(`https://api.vhtear.com/partytext?text=${coli1}&text2=${coli2}&apikey={VthearApi}`)
 					client.sendMessage(from, party, image, {quoted: mek})
 					break
                 case 'ninjalogo':
@@ -2728,20 +2722,12 @@ case 'narutologo':
 					buffer = await getBuffer(anu.result)
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					break
-				case 'party':
-					if (args.length < 1) return reply(mess.blank)
-					part = body.slice(7)
-					if (part.length > 20) return reply('O texto é muito longo, até 20 caracteres')
-					reply(mess.wait)
-					buffer = await getBuffer(`https://api.vhtear.com/partytext?text=${part}&apikey=ANTIGRATISNIHANJENKKK`)
-					client.sendMessage(from, buffer, image, {caption: 'Aqui mana', quoted: mek})
-					break
 				case 'rtext':
 					if (args.length < 1) return reply(mess.blank)
 					tels5 = body.slice(7)
 					if (tels5.length > 10) return reply('O texto é longo, com até 10 caracteres')
 					reply(mess.wait)
-					buffer = await getBuffer(`https://api.vhtear.com/romancetext?text=${tels5}&apikey=ANTIGRATISNIHANJENKKK`)
+					buffer = await getBuffer(`https://api.vhtear.com/romancetext?text=${tels5}&apikey={VthearApi}`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: tels5})
 					break
 				case 'water':
