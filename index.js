@@ -216,7 +216,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `Ola membro novo@${num.split('@')[0]}\n𝚂𝚎𝚓𝚊 𝚋𝚎𝚖 𝚟𝚒𝚗𝚍𝚘 𝚊𝚘  *${mdata.subject}*\n\n 𝚕𝚎𝚒𝚊 𝚊𝚜 𝚛𝚎𝚐𝚛𝚊𝚜 𝚜𝚎 𝚗ã𝚘 𝚓𝚊 𝚕𝚎𝚟𝚊 𝚘 𝚋𝚊𝚗️`
+				teks = `Ola membro novo@${num.split('@')[0]}\nSeja bem-vindo ao *${mdata.subject}*\n\n leia as regras para evitar banimento.`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 				client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
@@ -227,7 +227,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `Foi embora@${num.split('@')[0]} 𝚔𝚔𝚔𝚔𝚔𝚔𝚔 👋`
+				teks = `Foi embora@${num.split('@')[0]} 👋`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			}
@@ -356,14 +356,7 @@ async function starts() {
                 console.error(err)
             }
         }
-if (text.includes("ip"))
-  { const aris = text.replace(/.ip /, "") 
-  axios.get(`https://mnazria.herokuapp.com/api/check?ip=${aris}`).then((res) =>{ 
-  let hasil = ` *🔍CONSULTA REALIZADA🔍* \n\n ➸ *CIDADE:*  ${res.data.city}\n ➸ *Latitude:* ${res.data.latitude}\n ➸ *Longtitude:* ${res.data.longitude}\n ➸ *REGIÃO:* ${res.data.region_name}\n ➸ *UF:* ${res.data.region_code}\n ➸ *IP:* ${res.data.ip}\n ➸ *TIPO:* ${res.data.type}\n ➸ *CEP:* ${res.data.zip}\n ➸ *LOCALIDADE:* ${res.data.location.geoname_id}\n ➸ *CAPITAL:* ${res.data.location.capital}\n ➸ *DDD:* ${res.data.location.calling_code}\n ➸ *PAÍS:* ${res.data.location.country_flag_emoji}\n *📌BY:May Bot*` 
-  conn.sendMessage(id, hasil, MessageType.text); 
- })
- }
-	
+
 if (text.includes('cry')){
   var teks = text.replace(/!randomcry /, '')
     axios.get(`https://tobz-api.herokuapp.com/api/cry`).then((res) => {
@@ -975,21 +968,13 @@ case 'logolol':
                     c = await getBuffer(b.data.url)
                     client.sendMessage(from, c, image, {quoted: mek})
                     break
-case 'gtav':
-	var imgbb = require('imgbb-uploader')
-	if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
-	  ted = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo: mek
-	  reply(mess.wait)
-	  owgi = await client.downloadAndSaveMediaMessage(ted)
-	  tels = body.slice(7)
-	  anu = await imgbb("caabb4691c8150cbe4af119d5f64e651", owgi)
-	  hehe = await fetchJson(`https://api-exteam.herokuapp.com/api/photooxy/foto?tema=gtav&teks=${anu.display_url}`)
-buffer = await getBuffer(hehe.data.img)
-					client.sendMessage(from, buffer, image, {quoted: mek})
-	} else {
-	  reply('marca a imagem/Nao adicione nada au comando')
-	}
-	break
+				case 'ip':
+  { const aris = text.replace(/.ip /, "") 
+  axios.get(`https://mnazria.herokuapp.com/api/check?ip=${aris}`).then((res) =>{ 
+  let hasil = ` *🔍CONSULTA REALIZADA🔍* \n\n ➸ *CIDADE:*  ${res.data.city}\n ➸ *Latitude:* ${res.data.latitude}\n ➸ *Longtitude:* ${res.data.longitude}\n ➸ *REGIÃO:* ${res.data.region_name}\n ➸ *UF:* ${res.data.region_code}\n ➸ *IP:* ${res.data.ip}\n ➸ *TIPO:* ${res.data.type}\n ➸ *CEP:* ${res.data.zip}\n ➸ *LOCALIDADE:* ${res.data.location.geoname_id}\n ➸ *CAPITAL:* ${res.data.location.capital}\n ➸ *DDD:* ${res.data.location.calling_code}\n ➸ *PAÍS:* ${res.data.location.country_flag_emoji}\n *📌BY:May Bot*` 
+  conn.sendMessage(id, hasil, MessageType.text); 
+ })
+ }
 				case 'encode64':
 
 				encode64 = `${body.slice(10)}`
