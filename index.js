@@ -2057,7 +2057,7 @@ break
 		            case 'infonomor':
                      client.updatePresence(from, Presence.composing) 
                      if (!isUser) return reply(mess.only.daftarB)
-                     if (args.length < 1) return reply(`Insira numeros\nExemplo : ${prefix}infonomor 556299663...`)
+                     if (args.length < 1) return reply(`Insira numeros\nExemplo: ${prefix}infonomor 556299663...`)
                      data = await fetchJson(`API INFO NOMOR AQUI${body.slice(11)}`)
                      if (data.error) return reply(data.error)
                      if (data.result) return reply(data.result)
@@ -2083,20 +2083,6 @@ break
 					buffer = await getBuffer(anu.result)
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					break
-                                case 'mining':
-                                        if (!isEventon) return reply(`Desculpe ${pushname} a mineração de eventos é ativada pelo proprietário`)
-                                        if (isOwner) {
-                                                const one = 999999999
-                                                addLevelingXp(sender, one)
-                                                addLevelingLevel(sender, 99)
-                                                reply(`porque você é nosso proprietário da equipe bot de envio ${one}Xp para voce`)
-                                        } else {
-                                                const mining = Math.ceil(Math.random() * 10000)
-                                                addLevelingXp(sender, mining)
-                                                await reply(`*Parabéns* ${pushname} você pega *${mining}Xp*`)
-                                        }
-                                        await limitAdd(sender)
-                                        break
 			    case 'waifu':
 				    try {
 						res = await fetchJson(`https://tobz-api.herokuapp.com/api/waifu`, {method: 'get'})
